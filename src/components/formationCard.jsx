@@ -23,20 +23,20 @@ function FormationCard({
       </span>
 
       {/* Titre */}
-      <h3 className="text-2xl font-bold text-gray-900">{titre}</h3>
+      <h3 className="text-2xl font-bold text-font text-gray-900">{titre}</h3>
 
       {/* Description */}
-      <p className="text-sm text-gray-500 leading-relaxed">{description}</p>
+      <p className="text-sm text-font text-gray-500 leading-relaxed">{description}</p>
 
       {/* Durée + Tarif */}
       <div className="flex justify-between items-end">
         <div>
           <p className="text-xs text-gray-400">Durée</p>
-          <p className="text-xl font-semibold text-gray-800">{duree}</p>
+          <p className="text-xl font-semibold text-font text-gray-800">{duree}</p>
         </div>
         <div className="text-right">
           <p className="text-xs text-gray-400">Tarif</p>
-          <p className="text-xl font-extrabold text-orange-500">{tarif}</p>
+          <p className="text-xl font-extrabold text-orange-500 text-font">{tarif}</p>
         </div>
       </div>
 

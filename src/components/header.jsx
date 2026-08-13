@@ -25,7 +25,7 @@ function Header() {
             </div>
 
             <div className='text-justify w-full pr-2 text-[1rem] md:w-[70%]'>
-                <h6>Dans un monde où la technologie redéfinit chaque métier,
+                <h6 className='text-font text-gray-600'>Dans un monde où la technologie redéfinit chaque métier,
                     Worketyamo te donne les compétences pour ne pas subir
                     le changement — mais pour le créer.
             </h6>

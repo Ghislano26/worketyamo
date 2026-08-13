@@ -96,7 +96,7 @@ function FormationText(){
     <div className='w-[85%] h-full flex flex-col justify-center gap-5'>
         <h1 className='text-2xl md:text-5xl font-bold text-blue-950'>Formations Présentielles</h1>
         <hr  className='w-[10%] h-1 bg-orange-400 border-0'/>
-        <p className='text-gray-500'>Apprenez dans notre cente à Yaoundé, entouré d'une communauté motivée et encadré par des formateurs experts.</p>
+        <p className='text-gray-500 text-font'>Apprenez dans notre cente à Yaoundé, entouré d'une communauté motivée et encadré par des formateurs experts.</p>
     </div>
   )
 }

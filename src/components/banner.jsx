@@ -25,10 +25,10 @@ function StatItem({ end, suffix, subtitle }) {
 
   return (
     <div className='flex flex-col items-center gap-3'>
-      <h1 className='text-orange-500 text-3xl font-bold'>
+      <h1 className='text-orange-500 text-3xl font-bold text-fint'>
         {count}{suffix}
       </h1>
-      <h2 className='text-white'>{subtitle}</h2>
+      <h2 className='text-white text-font'>{subtitle}</h2>
     </div>
   );
 }
