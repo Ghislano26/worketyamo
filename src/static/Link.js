@@ -25,26 +25,9 @@ export const Links = [
     }
 ]
 
-export const infoBanner = [
-    {
-        'id': 1,
-        'title': '200+',
-        'subtitle': 'APPRENANTS FORMES'
-    },
-    {
-        'id': 2,
-        'title': '3 Ans',
-        'subtitle': 'D\'EXPERIENCE '
-    },
-    {
-        'id': 3,
-        'title': '2 Modes',
-        'subtitle': 'DE FORMATIONS'
-    },
-    {
-        'id': 4,
-        'title': '95%',
-        'subtitle': 'TAUX DE SATISFACTIONS'
-    }
-
-]
+export const infoBanner = [ 
+  { id: 1, end: 200, suffix: '+', subtitle: 'APPRENANTS FORMÉS' }, 
+  { id: 2, end: 3, suffix: ' Ans', subtitle: "D'EXPÉRIENCE" }, 
+  { id: 3, end: 2, suffix: ' Modes', subtitle: 'DE FORMATIONS' }, 
+  { id: 4, end: 95, suffix: '%', subtitle: 'TAUX DE SATISFACTION' } 
+];
