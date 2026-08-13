@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <div className='shadow-lg bg-gray-100 w-full sticky top-0 z-50 sm:bg-white'>
         <div className='flex items-center justify-between h-20 px-5 sm:px-0'>
-            <div className='flex justify-center items-center ml-45'>
+            <div className='flex justify-center items-center md:ml-45'>
                 <h1 className='text-orange-500 text-[1.5rem] font-bold'><span className='text-blue-500 text-[1.5rem] font-bold'>Worket</span>Yamo</h1>
             </div>
 
