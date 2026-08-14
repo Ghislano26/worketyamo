@@ -10,7 +10,7 @@ function FormationCard({
   onReserver,
 }) {
   return (
-    <div className="bg-white animate-float rounded-2xl border-2 border-blue-200 shadow-sm p-6 flex flex-col gap-4 max-w-2xl transition-all hover:cursor-grab">
+    <div className="bg-white animate-float rounded-2xl border-2 border-blue-200 shadow-sm p-6 flex flex-col gap-4 md:max-w-2xl transition-all hover:cursor-grab">
       
       {/* Icône */}
       <div className="bg-blue-50 w-12 h-12 rounded-xl flex items-center justify-center">
@@ -23,10 +23,10 @@ function FormationCard({
       </span>
 
       {/* Titre */}
-      <h3 className="text-2xl font-bold text-font text-gray-900">{titre}</h3>
+      <h3 className="text-xl md:text-2xl font-bold text-font text-gray-900">{titre}</h3>
 
       {/* Description */}
-      <p className="text-sm text-font text-gray-500 leading-relaxed">{description}</p>
+      <p className="text-[.9rem] md:text-sm text-font text-gray-500 leading-relaxed">{description}</p>
 
       {/* Durée + Tarif */}
       <div className="flex justify-between items-end">
