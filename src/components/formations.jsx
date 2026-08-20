@@ -1,4 +1,3 @@
-import React from 'react'
 import FormationCard from './formationCard'
 import { useNavigate } from 'react-router'
 import { useState, useEffect, useRef } from 'react';
@@ -9,21 +8,22 @@ function ScrollAnimate({ children, delay = "" }) {
   const domRef = useRef();
 
   useEffect(() => {
+    const node = domRef.current;
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.unobserve(domRef.current); // On arrête d'observer après l'apparition
+          if (node) observer.unobserve(node);
         }
       });
     }, { threshold: 0.1 });
 
-    if (domRef.current) {
-      observer.observe(domRef.current);
+    if (node) {
+      observer.observe(node);
     }
 
     return () => {
-      if (domRef.current) observer.unobserve(domRef.current);
+      if (node) observer.unobserve(node);
     };
   }, []);
 
@@ -48,16 +48,16 @@ function Formations() {
   const navigate = useNavigate()
 
   return (
-    <section className='w-full mt-15 h-150 flex flex-col gap-10 md:pt-30 md:mt-0'>
+    <section className='w-full py-16 md:py-24 flex flex-col gap-10 bg-white'>
 
-      <div className='pl-5 md:pl-48 flex-1 flex'>
+      <div className='px-5 md:px-24 max-w-7xl mx-auto w-full'>
         <ScrollAnimate>
           <FormationText/>
         </ScrollAnimate>
       </div>
 
 
-      <div className='pl-5 p-5 gap-8 md:pl-45 md:pr-42 flex-2 flex flex-col md:flex-row md:gap-0 justify-between'>
+      <div className='px-5 md:px-24 max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-8'>
         <ScrollAnimate>
           <FormationCard 
             titre={'Développement Web FullStack'}
@@ -65,20 +65,30 @@ function Formations() {
             duree={'8 mois'}
             tarif={150000}
             onReserver={()=>navigate('/contact')}
-        />
+          />
         </ScrollAnimate>
 
 
-          <ScrollAnimate>
-            <FormationCard 
-              titre={'DevOps & Cloud'}
-              description={'Linux, Docker, CI/CD, GitHub Actions, déploiement cloud. Maitrise l\'infrastructure des applications modernes'}
-              duree={'10 mois'}
-              tarif={250000}
-              onReserver={()=>navigate('/contact')}
-            />
-          </ScrollAnimate>
+        <ScrollAnimate>
+          <FormationCard 
+            titre={'DevOps & Cloud'}
+            description={'Linux, Docker, CI/CD, GitHub Actions, déploiement cloud. Maitrise l\'infrastructure des applications modernes.'}
+            duree={'10 mois'}
+            tarif={250000}
+            onReserver={()=>navigate('/contact')}
+          />
+        </ScrollAnimate>
 
+      </div>
+
+      <div className="text-center mt-4">
+        <button
+          onClick={() => navigate('/formations')}
+          className="inline-flex items-center gap-2 text-sm sm:text-base font-bold text-blue-600 hover:text-blue-800 transition-colors hover:cursor-pointer"
+        >
+          <span>Découvrir l'ensemble du catalogue présentiel & stages</span>
+          <span>→</span>
+        </button>
       </div>
 
       
@@ -91,10 +101,13 @@ export default Formations
 
 function FormationText(){
   return (
-    <div className='w-[97%] md:w-[85%] h-full flex flex-col justify-center gap-5'>
-        <h1 className='text-[1.7rem] md:text-5xl font-bold text-blue-950'>Formations Présentielles</h1>
-        <hr  className='w-[10%] h-1 bg-orange-400 border-0'/>
-        <p className='text-gray-500 text-font'>Apprenez dans notre cente à Yaoundé, entouré d'une communauté motivée et encadré par des formateurs experts.</p>
+    <div className='w-full flex flex-col justify-center gap-4'>
+        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold w-fit">
+          <span>Campus Yaoundé — Melen</span>
+        </div>
+        <h2 className='text-3xl md:text-5xl font-extrabold text-blue-950 tracking-tight'>Formations Présentielles</h2>
+        <div className='w-20 h-1.5 bg-orange-400 rounded-full border-0'></div>
+        <p className='text-gray-500 text-font text-base md:text-lg max-w-3xl'>Apprenez dans notre centre à Yaoundé (Melen, Face CHUY), entouré d'une communauté motivée et encadré par des formateurs experts de l'industrie.</p>
     </div>
   )
 }

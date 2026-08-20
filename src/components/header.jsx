@@ -1,62 +1,81 @@
-import React from 'react'
 import image from '../assets/images/home1.svg'
 import Buttons from './buttons'
 import { Typewriter } from 'react-simple-typewriter'
+import { useNavigate } from 'react-router'
 
-function Header() {
+function Header({ onVoirFormations }) {
+  const navigate = useNavigate();
+
+  const handleFormationsClick = () => {
+    if (onVoirFormations) {
+      onVoirFormations();
+    } else {
+      navigate('/formations');
+    }
+  };
+
   return (
-    <div className='w-full h-150 flex flex-col md:flex-row gap-3 md:p-5 md:mt-25 md:flex'>
+    <header className='w-full min-h-[520px] md:min-h-[600px] flex flex-col md:flex-row gap-8 md:gap-3 px-4 sm:px-6 md:px-12 py-10 md:py-16 items-center justify-between'>
         
-        <div className='flex-1 flex flex-col pl-5 pr-5 p-2 justify-center gap-8 md:pl-40'>
+        <div className='flex-1 flex flex-col justify-center gap-6 md:gap-8 md:pl-12 lg:pl-24'>
             
-            <div className='text-[2.4rem] md:text-6xl font-bold w-full leading-normal'> 
-                <h1 className='text-blue-950'>Forme-toi aujourd'hui. <br />Construis demain. <br />  <span className='text-blue-500'>
-                     <Typewriter
-                        words={['La référence tech du Cameroun.']}
-                        loop={0} // 0 signifie une animation infinie (mettez 1 pour l'écrire une seule fois)
-                        cursor
-                        cursorStyle='|'
-                        typeSpeed={70}
-                        deleteSpeed={50}
-                        delaySpeed={2000} // Temps de pause une fois le texte entièrement écrit
+            <div className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold w-full leading-tight'> 
+                <h1 className='text-blue-950'>
+                  Forme-toi aujourd'hui. <br />
+                  Construis demain. <br />
+                  <span className='text-blue-500'>
+                    <Typewriter
+                      words={['La référence tech du Cameroun.', 'Développe ton potentiel.', 'Propulse ta carrière.']}
+                      loop={0}
+                      cursor
+                      cursorStyle='|'
+                      typeSpeed={70}
+                      deleteSpeed={50}
+                      delaySpeed={2000}
                     />
-                    
-                    </span></h1>
+                  </span>
+                </h1>
             </div>
 
-            <div className='text-justify w-full pr-2 text-[1rem] md:w-[70%]'>
-                <h6 className='text-font text-gray-600'>Dans un monde où la technologie redéfinit chaque métier,
-                    Worketyamo te donne les compétences pour ne pas subir
-                    le changement — mais pour le créer.
-            </h6>
+            <div className='text-justify w-full text-sm sm:text-base md:w-[85%] lg:w-[75%]'>
+                <p className='text-font text-gray-600 leading-relaxed'>
+                  Dans un monde où la technologie redéfinit chaque métier,
+                  Worketyamo te donne les compétences concrètes pour ne pas subir
+                  le changement — mais pour le créer. Rejoins notre centre à Melen (Yaoundé) ou forme-toi en ligne.
+                </p>
             </div>
 
-            <div className='w-full flex gap-5'>
-               <Buttons content={'Voir les formations'} className='text-white'/>
+            <div className='w-full flex flex-wrap gap-4 pt-2'>
+               <Buttons 
+                onClick={handleFormationsClick}
+                content={'Voir les formations'} 
+                className='text-white bg-orange-500 hover:bg-orange-600 shadow-md font-semibold'
+               />
 
                <a 
-                href="https://wa.me/237697712493?text=Bonjour, je viens de visiter votre site et j'aimerais en savoir plus sur les formations"
+                href="https://wa.me/237697712493?text=Bonjour Worketyamo, je viens de visiter votre site et j'aimerais en savoir plus sur les formations et stages."
                 target='_blank'
                 rel='noopener noreferrer'
-
-               
                >
-
-                <Buttons content={'Discuter sur whatsapp'} className='bg-white text-blue-400 border-2 border-blue-200'/>
+                <Buttons 
+                  content={'Discuter sur WhatsApp'} 
+                  className='bg-white text-emerald-600 border-2 border-emerald-300 hover:bg-emerald-50 font-semibold'
+                />
                </a>
             </div>
 
         </div>
 
 
-        <div className='flex-1 flex md:justify-start justify-center items-center '>
+        <div className='flex-1 flex md:justify-center justify-center items-center'>
             <img 
-            src={image} alt="image accueil" 
-            className='w-[70%] mt-4 md:w-[90%] md:mt-0 h-full sm:ml-2 animate-float'
+              src={image} 
+              alt="Worketyamo formation tech et développement au Cameroun" 
+              className='w-[80%] sm:w-[70%] md:w-[85%] max-w-md h-auto animate-float object-contain'
             />
         </div>
 
-    </div>
+    </header>
   )
 }
 

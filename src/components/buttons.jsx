@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Buttons({content, className = "", ...props}) {
   return (
     <button 

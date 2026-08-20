@@ -1,0 +1,6 @@
+{
+  "name": "Worketyamo",
+  "description": "Plateforme tech et centre de formation et de stages d'excellence à Yaoundé (Melen, Face CHUY) et en ligne : FullStack, Python, IA, Data Science, DevOps, Flutter, avec demandes et échanges directs sur WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
