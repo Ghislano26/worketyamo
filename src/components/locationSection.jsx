@@ -68,7 +68,7 @@ function LocationSection() {
                   <div>
                     <p className="font-semibold text-white">Téléphone & WhatsApp :</p>
                     <a href="tel:+237697712493" className="text-xs text-emerald-300 hover:underline">
-                     {phoneNumber}
+                     {phoneNumber} / 6 55 19 35 30
                     </a>
                   </div>
                 </div>
@@ -77,8 +77,8 @@ function LocationSection() {
                   <Mail size={18} className=" shrink-0" />
                   <div>
                     <p className="font-semibold text-white">Email de contact :</p>
-                    <a href="mailto:contact@worketyamo.com" className="text-xs text-blue-300 hover:underline">
-                      contact@worketyamo.com
+                    <a href="worketyamo.dev@gmail.com" className="text-xs text-blue-300 hover:underline">
+                      worketyamo.dev@gmail.com
                     </a>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ function LocationSection() {
                 </a>
 
                 <a
-                  href="https://wa.me/237697712493?text=Bonjour, je souhaite venir visiter le centre Worketyamo à Melen face au CHUY aujourd'hui."
+                  href="https://wa.me/237675541573?text=Bonjour, je souhaite venir visiter le centre Worketyamo à Melen face au CHUY aujourd'hui."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3 px-4 rounded-xl text-xs sm:text-sm transition-all"

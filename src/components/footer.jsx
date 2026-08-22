@@ -63,7 +63,7 @@ function Footer() {
 
             <div className="flex items-center gap-3 pt-2">
               <a
-                href="https://wa.me/237697712493"
+                href="https://wa.me/2376975541573"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
@@ -179,11 +179,11 @@ function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone size={18} className="shrink-0" />
-                <a href="tel:+237697712493" className="hover:underline">{phoneNumber}</a>
+                <a href="tel:+237675541575" className="hover:underline">{phoneNumber}</a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail size={18} className="shrink-0" />
-                <a href="mailto:contact@worketyamo.com" className="hover:underline">contact@worketyamo.com</a>
+                <a href="mailto:worketyamo.dev@gmail.com" className="hover:underline">worketyamo.dev@gmail.com</a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Globe size={18} className=" shrink-0" />

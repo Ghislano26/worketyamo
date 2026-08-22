@@ -189,7 +189,7 @@ function DemandeStageSection() {
                 {/* 3. Informations personnelles */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-medium text-slate-300 mb-1.5 flex items-center gap-1.5">
+                    <label className=" text-xs font-medium text-slate-300 mb-1.5 flex items-center gap-1.5">
                       <User size={14} />
                       Nom et Prénom *
                     </label>
@@ -204,7 +204,7 @@ function DemandeStageSection() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-medium text-slate-300 mb-1.5 flex items-center gap-1.5">
+                    <label className=" text-xs font-medium text-slate-300 mb-1.5 flex items-center gap-1.5">
                       <Phone size={14} />
                       Numéro WhatsApp / Téléphone *
                     </label>
@@ -221,7 +221,7 @@ function DemandeStageSection() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-medium text-slate-300 mb-1.5 flex items-center gap-1.5">
+                    <label className=" text-xs font-medium text-slate-300 mb-1.5 flex items-center gap-1.5">
                       <GraduationCap size={14} />
                       École / Université / Profession actuelle
                     </label>
@@ -235,7 +235,7 @@ function DemandeStageSection() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-medium text-slate-300 mb-1.5 flex items-center gap-1.5">
+                    <label className=" text-xs font-medium text-slate-300 mb-1.5 flex items-center gap-1.5">
                       <Calendar size={14}  />
                       Date de début souhaitée
                     </label>
@@ -325,7 +325,7 @@ function DemandeStageSection() {
               <ul className="space-y-3 text-xs text-slate-300">
                 <li className="flex items-start gap-2">
                   <CheckCircle size={15} className="text-emerald-400 shrink-0 mt-0.5" />
-                  <span><strong>100% Pratique :</strong> Pas de cours théoriques ennuyeux, vous codez dès le 1er jour sur des projets réels.</span>
+                  <span><strong>100% Pratique :</strong> , vous codez dès le 1er jour sur des projets réels.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle size={15} className="text-emerald-400 shrink-0 mt-0.5" />
@@ -354,7 +354,7 @@ function DemandeStageSection() {
                 </div>
               </div>
               <a
-                href={`https://wa.me/${phoneNumber}?text=Bonjour Worketyamo, je souhaite avoir un renseignement sur les formations.`}
+                href={`https://wa.me/+237675541573?text=Bonjour Worketyamo, je souhaite avoir un renseignement sur les formations.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-3 py-1.5 bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-semibold rounded-lg transition-colors"

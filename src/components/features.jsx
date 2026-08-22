@@ -80,7 +80,7 @@ function Features() {
                 className="bg-white rounded-2xl p-7 border border-gray-200/80 shadow-xs hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between"
               >
                 <div>
-                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${pt.color} text-white flex items-center justify-center mb-6 shadow-md`}>
+                  <div className={`w-14 h-14 rounded-2xl bg-linear-to-br ${pt.color} text-white flex items-center justify-center mb-6 shadow-md`}>
                     <Icon size={26} />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">

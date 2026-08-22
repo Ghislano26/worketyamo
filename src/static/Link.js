@@ -29,5 +29,5 @@ export const infoBanner = [
   { id: 1, end: 200, suffix: '+', subtitle: 'APPRENANTS FORMÉS' }, 
   { id: 2, end: 3, suffix: ' Ans', subtitle: "D'EXPÉRIENCE" }, 
   { id: 3, end: 2, suffix: ' Modes', subtitle: 'DE FORMATIONS' }, 
-  { id: 4, end: 95, suffix: '%', subtitle: 'TAUX DE SATISFACTION' } 
+  { id: 4, end: 100, suffix: '%', subtitle: 'TAUX DE SATISFACTION' } 
 ];

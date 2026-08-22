@@ -2,6 +2,7 @@ import image from '../assets/images/home1.svg'
 import Buttons from './buttons'
 import { Typewriter } from 'react-simple-typewriter'
 import { useNavigate } from 'react-router'
+import { phoneNumber } from '../static/phoneNumber'
 
 function Header({ onVoirFormations }) {
   const navigate = useNavigate();
@@ -21,11 +22,11 @@ function Header({ onVoirFormations }) {
             
             <div className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold w-full leading-tight'> 
                 <h1 className='text-blue-950'>
-                  Forme-toi aujourd'hui. <br />
-                  Construis demain. <br />
+                  La clé d'une carrière <br />
+                  dans la tech. <br />
                   <span className='text-blue-500'>
                     <Typewriter
-                      words={['La référence tech du Cameroun.', 'Développe ton potentiel.', 'Propulse ta carrière.']}
+                      words={['La fabrique des pros', 'de la tech.', 'Propulse ta carrière.']}
                       loop={0}
                       cursor
                       cursorStyle='|'
@@ -41,7 +42,7 @@ function Header({ onVoirFormations }) {
                 <p className='text-font text-gray-600 leading-relaxed'>
                   Dans un monde où la technologie redéfinit chaque métier,
                   Worketyamo te donne les compétences concrètes pour ne pas subir
-                  le changement — mais pour le créer. Rejoins notre centre à Melen (Yaoundé) ou forme-toi en ligne.
+                  le changement, mais pour le créer. Rejoins notre centre dès aujourd'hui.
                 </p>
             </div>
 
@@ -53,7 +54,7 @@ function Header({ onVoirFormations }) {
                />
 
                <a 
-                href="https://wa.me/237697712493?text=Bonjour Worketyamo, je viens de visiter votre site et j'aimerais en savoir plus sur les formations et stages."
+                href={`https://wa.me/+237675541573?text=Bonjour Worketyamo, je viens de visiter votre site et j'aimerais en savoir plus sur les formations et stages.`}
                 target='_blank'
                 rel='noopener noreferrer'
                >

@@ -1,4 +1,5 @@
 import ghlogo from '../assets/images/gh.jpg'
+import ghmodif from '../assets/images/ghmodif.png'
 import gh from '../assets/images/gh2.jpg'
 import w11 from '../assets/images/w11.jpg'
 import w13 from '../assets/images/w13.jpg'
@@ -87,10 +88,9 @@ export const testimonials = [
     id: 1,
     nom: "Ghislain Ateba",
     role: "Développeur web fullstack & Mobile",
-    promo: "Alumni FullStack 2025",
     texte: "Worketyamo a transformé ma carrière. En 8 mois à Melen, je suis passé de zéro connaissance en code à mon premier CDI de développeur. Les projets pratiques font toute la différence !",
     note: 5,
-    avatar: `${ghlogo}`
+    avatar: `${ghmodif}`
   },
   {
     id: 2,
@@ -99,15 +99,15 @@ export const testimonials = [
     promo: "Stage 2026",
     texte: "J'ai effectué mon stage académique chez Worketyamo pour valider mon diplôme d'ingénieur. L'encadrement sur mon application mobile et l'appui pour mon mémoire ont été exceptionnels. Mention Très Bien obtenue !",
     note: 5,
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80"
+    avatar: `${w14}`
   },
   {
     id: 3,
-    nom: "Delene",
+    nom: "Dylanne makwassa",
     role: "DevOps Junior",
     promo: "Formation En Ligne & Mentorat",
     texte: "J'ai suivi la formation DevOps en ligne depuis Douala avec le support WhatsApp. Les réponses des formateurs étaient quasi instantanées. J'ai déployé mes premiers clusters Kubernetes en moins de 3 mois.",
     note: 5,
-    avatar: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=200&q=80"
+    avatar: `${w13}`
   }
 ];

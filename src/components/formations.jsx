@@ -63,7 +63,7 @@ function Formations() {
             titre={'Développement Web FullStack'}
             description={'HTML, CSS, Javascript, React, Nodejs, Express, MongoDB. Construis des applications web complètes de A à Z.'}
             duree={'8 mois'}
-            tarif={150000}
+            tarif={250000}
             onReserver={()=>navigate('/contact')}
           />
         </ScrollAnimate>
