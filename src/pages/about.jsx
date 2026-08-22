@@ -41,7 +41,7 @@ function AboutPage() {
           </h1>
 
           <p className="max-w-3xl mx-auto text-blue-100 text-base sm:text-lg leading-relaxed mb-8">
-            Basée à <strong className="text-white">Yaoundé (Melen, en face du CHUY)</strong>, Worketyamo est une start-up et un centre de formation pratique conçu pour transformer des passionnés d'informatique en développeurs et ingénieurs opérationnels.
+           Dans un monde où les compétences technologiques sont devenues indispensables, l'Afrique fait face à un défi majeur : combler le fossé numérique pour permettre à sa jeunesse de saisir les opportunités offertes par l'économie numérique. Worketyamo se positionne comme une réponse innovante à ce défi.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">

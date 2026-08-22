@@ -157,18 +157,18 @@ export default function APropos() {
               <span className="text-blue-600">qui sommes-nous ?</span>
             </h2>
             <p className="text-gray-600 leading-relaxed text-base">
-              Worketyamo est un centre de formation en développement web et DevOps
-              fondé par des passionnés de la tech, basé à Yaoundé au Cameroun.
-              Nous croyons que le talent n'a pas de frontières — et que la meilleure
-              façon de transformer l'Afrique numérique, c'est de former des
-              développeurs compétents, capables de construire des produits qui
-              comptent.
+              Dans un monde où les compétences technologiques sont devenues indispensables, 
+              l'Afrique fait face à un défi majeur : combler le fossé numérique pour permettre à sa jeunesse de saisir les opportunités offertes par l'économie numérique. Worketyamo se positionne comme une réponse innovante à ce défi. 
+              Porté par <span className="text-blue-500">IT Engineering Factory</span>, une succursale de l'entreprise française IT Engineering, Worketyamo est une initiative éducative basée à Yaoundé, Cameroun, dédiée à la formation et à l'autonomisation des jeunes Africains.
             </p>
             <p className="text-gray-600 leading-relaxed text-base mt-4">
-              Nos formations sont pensées pour aller à l'essentiel : de la théorie
-              juste ce qu'il faut, et beaucoup de pratique sur des projets réels.
-              Nos apprenants repartent avec un portfolio, des compétences concrètes,
-              et la confiance de se lancer.
+              Le continent africain est en pleine transformation numérique, mais
+            beaucoup de jeunes n'ont pas accès aux formations nécessaires
+            pour participer activement à cette révolution. En réponse à cette
+            situation, Worketyamo a été créé pour fournir des formations IT de
+            haute qualité, destinées à combler ce déficit de compétences et à
+            offrir aux jeunes Africains les outils pour réussir dans un monde de
+            plus en plus numérique.
             </p>
 
             {/* Stats */}
