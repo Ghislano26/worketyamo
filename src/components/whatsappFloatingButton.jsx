@@ -4,7 +4,7 @@ import { MessageCircle, X } from 'lucide-react';
 function WhatsappFloatingButton() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const phoneNumber = "237697712493";
+  const phoneNumber = "237675541573";
   const defaultText = encodeURIComponent(
     "Bonjour Worketyamo ! Je viens depuis votre site web et j'aimerais avoir des informations sur vos formations et stages disponibles à Melen (Yaoundé) ou en ligne."
   );
@@ -39,7 +39,7 @@ function WhatsappFloatingButton() {
             className="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-4 rounded-xl text-xs transition-colors shadow-sm"
           >
             <MessageCircle size={16} />
-            <span>Démarrer la discussion (+237 697 71 24 93)</span>
+            <span>Démarrer la discussion (675 54 15 73)</span>
           </a>
         </div>
       )}
