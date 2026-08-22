@@ -5,6 +5,7 @@ import w13 from '../assets/images/w13.jpg'
 import w14 from '../assets/images/w14.jpg'
 import w16 from '../assets/images/w16.jpg'
 import w18 from '../assets/images/w18.jpg'
+import Ahmed  from '../assets/images/Ahmed.png'
 
 
 
@@ -60,10 +61,10 @@ export const teamMembers = [
     bio: "Passionné par l'autonomisation de la jeunesse camerounaise par le code et la transmission de compétences tech à fort impact."
   },
   {
-    nom: "Marcelle Fotso",
+    nom: "Tidjani Ahmed",
     role: "Responsable Pédagogique & Senior Frontend Engineer",
     specialite: "UI/UX Architecture, Next.js, Flutter",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+    image: `${Ahmed2}`,
     bio: "Experte en ingénierie d'interfaces modernes et accompagnatrice bienveillante pour les apprenants en reconversion."
   },
   {
