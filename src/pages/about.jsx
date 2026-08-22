@@ -3,9 +3,8 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import WhatsappFloatingButton from '../components/whatsappFloatingButton';
 import RegistrationModal from '../components/registrationModal';
-import { structureGallery, teamMembers } from '../static/aboutData';
-import { infoBanner } from '../static/Link';
-import { phoneNumber } from '../static/phoneNumber';
+import { structureGallery, structureGallery2, teamMembers } from '../static/aboutData';
+import APropos from '../components/textAbout';
 import { 
   Building2, 
   Target, 
@@ -23,8 +22,10 @@ function AboutPage() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col antialiased text-gray-800">
+
       <Navbar onReserver={() => setIsModalOpen(true)} />
 
+        
       {/* Hero Header À Propos */}
       <section className="bg-linear-to-r font-about text-white py-16 md:py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -52,7 +53,7 @@ function AboutPage() {
             </a>
 
             <a
-              href={`https://wa.me/${phoneNumber}?text=Bonjour, j'aimerais en savoir plus sur l'histoire et les locaux de Worketyamo.`}
+              href={`https://wa.me/237675541573?text=Bonjour, j'aimerais en savoir plus sur l'histoire et les locaux de Worketyamo.`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold rounded-xl backdrop-blur-sm transition-all text-sm flex items-center gap-2"
@@ -64,10 +65,13 @@ function AboutPage() {
         </div>
       </section>
 
+     <APropos/>
+
     
 
       {/* Section Vision, Mission & Valeurs */}
       <section className="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+         <textAbout/>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           
           <div className="bg-blue-50/70 border border-blue-100 rounded-3xl p-8 flex flex-col justify-between shadow-xs">
@@ -195,6 +199,43 @@ function AboutPage() {
             ))}
           </div>
 
+
+          <div dir="rtl" className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-70 mt-10 md:mt-25">
+            {structureGallery2.map((item) => (
+              <div
+                key={item.id}
+                onClick={() => setActiveImageModal(item)}
+                className={`group relative rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 cursor-pointer ${item.span}`}
+              >
+                {/* Image d'arrière plan */}
+                <img
+                  src={item.image}
+                  alt={item.titre}
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+
+                {/* Overlay dégradé */}
+                <div dir="ltr" className="absolute inset-0 bg-linear-to-t from-slate-950/90 via-slate-950/40 to-transparent flex flex-col justify-end p-6 sm:p-8 text-white transition-opacity">
+                  <span className="text-xs font-bold uppercase tracking-wider text-orange-400 mb-1">
+                    {item.categorie}
+                  </span>
+                  <h3 className="text-lg sm:text-2xl font-bold text-white group-hover:text-blue-200 transition-colors">
+                    {item.titre}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300 mt-2 line-clamp-2 leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+
+                {/* Badge d'agrandissement */}
+                <div className="absolute top-4 right-4 bg-black/40 backdrop-blur-md text-white text-xs px-3 py-1.5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                  Cliquer pour agrandir 🔍
+                </div>
+              </div>
+            ))}
+          </div>
+
           {/* <div className="mt-10 text-center">
             <p className="text-xs sm:text-sm text-gray-500">
               📍 Adresse du centre : <strong>Melen, Yaoundé — Directement en face de l'entrée principale du CHUY</strong>
@@ -202,6 +243,8 @@ function AboutPage() {
           </div> */}
 
         </div>
+
+        
       </section>
 
       {/* Section L'Équipe & Mentors */}
@@ -258,7 +301,7 @@ function AboutPage() {
       </section>
 
       {/* Section Appel à l'action */}
-      <section className="bg-linear-to-r font-about text-white py-16 px-4 sm:px-6 lg:px-8 border-t border-blue-800">
+      {/* <section className="bg-linear-to-r font-about text-white py-16 px-4 sm:px-6 lg:px-8 border-t border-blue-800">
         <div className="max-w-5xl mx-auto text-center space-y-6">
           <h2 className="text-3xl sm:text-4xl font-extrabold">
             Envie de nous rejoindre ou de visiter les locaux à Melen ?
@@ -286,7 +329,7 @@ function AboutPage() {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
       <WhatsappFloatingButton />

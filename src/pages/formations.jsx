@@ -102,7 +102,7 @@ function FormationsPage() {
           </div> */}
 
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-white mb-6">
-            Formations & Stages <span className="text-orange-400">Tech d'Excellence</span>
+            Formations & Stages <span className="text-orange-400"></span>
           </h1>
 
           <p className="max-w-3xl mx-auto text-blue-100 text-base sm:text-lg leading-relaxed mb-8">
