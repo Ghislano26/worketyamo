@@ -4,6 +4,7 @@ import Footer from '../components/footer';
 import WhatsappFloatingButton from '../components/whatsappFloatingButton';
 import RegistrationModal from '../components/registrationModal';
 import { faqList } from '../static/formationsData';
+import { phoneNumber } from '../static/phoneNumber';
 import { 
   MapPin, 
   Phone, 
@@ -61,7 +62,7 @@ function ContactPage() {
 ----------------------------------------
 📍 *Lieu :* Worketyamo - Melen, Yaoundé (Face au CHUY)`;
 
-    const whatsappUrl = `https://wa.me/237697712493?text=${encodeURIComponent(messageText)}`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(messageText)}`;
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
@@ -74,14 +75,14 @@ function ContactPage() {
       <Navbar onReserver={() => setIsModalOpen(true)} />
 
       {/* Hero Header Contact */}
-      <section className="bg-gradient-to-r from-blue-950 via-blue-900 to-slate-900 text-white py-16 md:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <section className="bg-linear-to-r from-blue-950 via-blue-900 to-slate-900 text-white py-16 md:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="max-w-5xl mx-auto text-center relative z-10">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/20 border border-orange-500/30 text-orange-400 text-xs sm:text-sm font-semibold mb-4">
+          {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/20 border border-orange-500/30 text-orange-400 text-xs sm:text-sm font-semibold mb-4">
             <Sparkles size={16} />
             <span>Contact & Orientation Personnalisée</span>
-          </div>
+          </div> */}
 
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-white mb-6">
             Parlons de votre <span className="text-orange-400">avenir tech</span>
@@ -115,7 +116,7 @@ function ContactPage() {
                 </p>
 
                 <a
-                  href={`https://wa.me/237697712493?text=${encodeURIComponent(
+                  href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(
                     `Bonjour Worketyamo, je viens d'envoyer un message pour : ${formData.motif}.`
                   )}`}
                   target="_blank"
@@ -139,12 +140,12 @@ function ContactPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5 flex items-center gap-1">
-                      <User size={13} className="text-blue-500" />
+                      <User size={13} />
                       Nom complet *
                     </label>
                     <input
                       type="text"
-                      placeholder="Ex: Paul Mbarga"
+                      placeholder="Ex: Ghislain Ateba Chouacha"
                       value={formData.nom}
                       onChange={(e) => setFormData({ ...formData, nom: e.target.value })}
                       required
@@ -154,12 +155,12 @@ function ContactPage() {
 
                   <div>
                     <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5 flex items-center gap-1">
-                      <Phone size={13} className="text-emerald-500" />
+                      <Phone size={13} />
                       Téléphone / WhatsApp *
                     </label>
                     <input
                       type="tel"
-                      placeholder="Ex: 697 71 24 93"
+                      placeholder="Ex: 680 87 86 40"
                       value={formData.telephone}
                       onChange={(e) => setFormData({ ...formData, telephone: e.target.value })}
                       required
@@ -171,7 +172,7 @@ function ContactPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5 flex items-center gap-1">
-                      <Mail size={13} className="text-blue-500" />
+                      <Mail size={13}  />
                       Email (Optionnel)
                     </label>
                     <input
@@ -185,7 +186,7 @@ function ContactPage() {
 
                   <div>
                     <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5 flex items-center gap-1">
-                      <GraduationCap size={13} className="text-orange-500" />
+                      <GraduationCap size={13}  />
                       École / Université / Statut
                     </label>
                     <input
@@ -238,7 +239,7 @@ function ContactPage() {
                   </button>
 
                   <a
-                    href="https://wa.me/237697712493?text=Bonjour, je souhaite contacter l'équipe Worketyamo directement."
+                    href={`https://wa.me/${phoneNumber}?text=Bonjour, je souhaite contacter l'équipe Worketyamo directement.`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-6 rounded-xl transition-colors text-sm sm:text-base"
@@ -257,9 +258,9 @@ function ContactPage() {
           <div className="lg:col-span-5 space-y-6">
             
             {/* Box Adresse Melen */}
-            <div className="bg-gradient-to-br from-blue-950 to-slate-900 text-white rounded-3xl p-6 sm:p-8 shadow-xl relative overflow-hidden">
+            <div className="bg-linear-to-br from-blue-950 to-slate-900 text-white rounded-3xl p-6 sm:p-8 shadow-xl relative overflow-hidden">
               <div className="flex items-start gap-4 mb-5">
-                <div className="w-12 h-12 rounded-2xl bg-orange-500 text-white flex items-center justify-center shrink-0 shadow-lg">
+                <div className="w-12 h-12 rounded-2xl  text-white flex items-center justify-center shrink-0 shadow-lg">
                   <MapPin size={24} />
                 </div>
                 <div>
@@ -271,17 +272,17 @@ function ContactPage() {
 
               <div className="space-y-3.5 text-xs sm:text-sm text-slate-300 border-t border-slate-700/80 pt-4">
                 <div className="flex items-center gap-3">
-                  <Clock size={16} className="text-orange-400 shrink-0" />
+                  <Clock size={16} className="shrink-0" />
                   <span>Ouvert du Lundi au Samedi : 08h00 – 18h30</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Phone size={16} className="text-emerald-400 shrink-0" />
+                  <Phone size={16} className="shrink-0" />
                   <a href="tel:+237697712493" className="hover:underline text-emerald-300 font-semibold">
-                    +237 697 71 24 93 (Appel & WhatsApp)
+                    {phoneNumber} (Appel & WhatsApp)
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Mail size={16} className="text-blue-400 shrink-0" />
+                  <Mail size={16} className="shrink-0" />
                   <a href="mailto:contact@worketyamo.com" className="hover:underline text-blue-300">
                     contact@worketyamo.com
                   </a>

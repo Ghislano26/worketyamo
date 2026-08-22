@@ -1,0 +1,1 @@
+export const phoneNumber = '+237 675 54 15 73'

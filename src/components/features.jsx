@@ -56,10 +56,10 @@ function Features() {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-100 border border-orange-200 text-orange-800 text-xs sm:text-sm font-semibold mb-3">
+          {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-100 border border-orange-200 text-orange-800 text-xs sm:text-sm font-semibold mb-3">
             <Sparkles size={16} className="text-orange-500" />
             <span>L'ADN Worketyamo</span>
-          </div>
+          </div> */}
 
           <h2 className="text-3xl md:text-5xl font-extrabold text-blue-950 tracking-tight">
             Pourquoi apprendre avec <span className="text-orange-500">Worketyamo</span> ?

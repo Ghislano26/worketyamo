@@ -2,7 +2,7 @@ import { Code2 } from "lucide-react";
 
 function FormationCard({
   icon: Icon = Code2,
-  badge = "Présentiel — Yaoundé (Melen)",
+  // badge = "Présentiel — Yaoundé (Melen)",
   titre,
   description,
   duree,
@@ -24,9 +24,9 @@ function FormationCard({
           </div>
 
           {/* Badge */}
-          <span className="w-fit text-xs font-semibold text-blue-700 bg-blue-50 border border-blue-200 px-3 py-1 rounded-full">
+          {/* <span className="w-fit text-xs font-semibold text-blue-700 bg-blue-50 border border-blue-200 px-3 py-1 rounded-full">
             {badge}
-          </span>
+          </span> */}
         </div>
 
         {/* Titre */}

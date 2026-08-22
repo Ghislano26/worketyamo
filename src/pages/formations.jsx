@@ -92,14 +92,14 @@ function FormationsPage() {
       <Navbar onReserver={() => handleOpenRegistration(null)} />
 
       {/* Hero Header */}
-      <section className="bg-gradient-to-r from-blue-950 via-blue-900 to-slate-900 text-white py-16 md:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <section className="bg-linear-to-r from-blue-950 via-blue-900 to-slate-900 text-white py-16 md:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute -right-10 -bottom-10 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl pointer-events-none"></div>
         
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/20 border border-orange-500/30 text-orange-400 text-xs sm:text-sm font-semibold mb-4">
+          {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/20 border border-orange-500/30 text-orange-400 text-xs sm:text-sm font-semibold mb-4">
             <Sparkles size={16} />
             <span>Catalogue Officiel Worketyamo 2026</span>
-          </div>
+          </div> */}
 
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-white mb-6">
             Formations & Stages <span className="text-orange-400">Tech d'Excellence</span>
@@ -306,28 +306,7 @@ function FormationsPage() {
       </section>
 
       {/* Bannière de réassurance & contact direct */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 w-full">
-        <div className="bg-gradient-to-r from-orange-500 to-amber-600 rounded-3xl p-8 sm:p-12 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="space-y-3 text-center md:text-left">
-            <h3 className="text-2xl sm:text-3xl font-black">
-              Vous avez un projet spécifique ou une demande de stage sur-mesure ?
-            </h3>
-            <p className="text-orange-100 text-sm sm:text-base max-w-2xl">
-              Notre équipe vous accueille directement dans nos locaux à Melen (Yaoundé, face CHUY) du lundi au samedi pour échanger sur vos objectifs.
-            </p>
-          </div>
-
-          <a
-            href="https://wa.me/237697712493?text=Bonjour, je souhaite prendre rendez-vous ou discuter d'un besoin de formation particulier."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shrink-0 inline-flex items-center gap-2 bg-white text-orange-600 font-extrabold py-4 px-8 rounded-2xl shadow-lg hover:bg-orange-50 transition-all transform hover:scale-105"
-          >
-            <MessageCircle size={22} className="text-emerald-600" />
-            <span>Discuter maintenant</span>
-          </a>
-        </div>
-      </section>
+     
 
       <Footer />
       <WhatsappFloatingButton />
@@ -338,6 +317,7 @@ function FormationsPage() {
         onClose={() => setIsModalOpen(false)}
         defaultFormation={selectedFormationForModal}
       />
+      
     </div>
   );
 }

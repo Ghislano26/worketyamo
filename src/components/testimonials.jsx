@@ -8,7 +8,6 @@ function Testimonials() {
         
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs sm:text-sm font-semibold mb-3">
-            <MessageSquare size={16} className="text-emerald-500" />
             <span>Témoignages & Réussites</span>
           </div>
 
@@ -26,7 +25,7 @@ function Testimonials() {
           {testimonials.map((t) => (
             <div
               key={t.id}
-              className="bg-gradient-to-b from-gray-50 to-white rounded-2xl p-7 border border-gray-200 shadow-sm flex flex-col justify-between relative hover:shadow-md transition-shadow"
+              className="bg-liear-to-b from-gray-50 to-white rounded-2xl p-7 border border-gray-200 shadow-sm flex flex-col justify-between relative hover:shadow-md transition-shadow"
             >
               <Quote className="absolute top-6 right-6 text-blue-100" size={42} />
 

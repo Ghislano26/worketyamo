@@ -102,9 +102,9 @@ export default Formations
 function FormationText(){
   return (
     <div className='w-full flex flex-col justify-center gap-4'>
-        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold w-fit">
-          <span>Campus Yaoundé — Melen</span>
-        </div>
+        {/* <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-orange-50 border border-blue-200 text-blue-700 text-xs font-semibold w-fit">
+          <span>Campus Yaoundé Melen</span>
+        </div> */}
         <h2 className='text-3xl md:text-5xl font-extrabold text-blue-950 tracking-tight'>Formations Présentielles</h2>
         <div className='w-20 h-1.5 bg-orange-400 rounded-full border-0'></div>
         <p className='text-gray-500 text-font text-base md:text-lg max-w-3xl'>Apprenez dans notre centre à Yaoundé (Melen, Face CHUY), entouré d'une communauté motivée et encadré par des formateurs experts de l'industrie.</p>

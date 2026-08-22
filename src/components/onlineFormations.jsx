@@ -22,7 +22,7 @@ function OnlineFormations({ onSelectFormation }) {
     : onlineFormationsList.filter(c => c.categorie === selectedCategory);
 
   const handleWhatsAppInquiry = (course) => {
-    const phoneNumber = "237697712493";
+    const phoneNumber = "237675541573";
     const text = encodeURIComponent(
       `Bonjour Worketyamo ! Je suis très intéressé(e) par votre cours en ligne "${course.titre}" (Réf: ${course.plateforme}). J'aimerais avoir plus de détails sur les modalités d'accès et le suivi par mentor.`
     );
@@ -30,22 +30,21 @@ function OnlineFormations({ onSelectFormation }) {
   };
 
   return (
-    <section id="formations-en-ligne" className="w-full py-16 md:py-24 bg-gradient-to-b from-blue-50/60 via-white to-gray-50/80">
+    <section id="formations-en-ligne" className="w-full py-16 md:py-24 bg-linear-to-b from-blue-50/60 via-white to-gray-50/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* En-tête de section */}
         <div className="flex flex-col items-center text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-100/80 border border-blue-200 text-blue-700 text-xs sm:text-sm font-semibold mb-4">
-            <Sparkles size={16} className="text-orange-500 animate-pulse" />
+          {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-100/80 border border-blue-200 text-blue-700 text-xs sm:text-sm font-semibold mb-4">
             <span>Apprenez à votre rythme, où que vous soyez</span>
-          </div>
+          </div> */}
 
           <h2 className="text-3xl md:text-5xl font-extrabold text-blue-950 tracking-tight">
             Formations & Cours en Ligne <span className="text-blue-600">Certifiants</span>
           </h2>
           <div className="w-20 h-1.5 bg-orange-500 rounded-full mt-4 mb-5"></div>
           <p className="max-w-3xl text-gray-600 text-base md:text-lg leading-relaxed">
-            Accédez à nos programmes en ligne de haut niveau (Udemy & Plateforme Worketyamo) en <span className="font-semibold text-blue-900">Dev FullStack, Python, Data Science, IA, Mobile et DevOps</span>, enrichis par un accompagnement direct par nos mentors basés à Yaoundé.
+            Accédez à nos programmes en ligne de haut niveau (Udemy) en <span className="font-semibold text-blue-900">Dev FullStack, Python, Data Science, IA, Mobile et DevOps</span>, enrichis par un accompagnement direct par nos mentors basés à Yaoundé.
           </p>
 
           {/* Filtres par catégorie */}
@@ -75,7 +74,7 @@ function OnlineFormations({ onSelectFormation }) {
             >
               <div>
                 {/* Header card avec badge & note */}
-                <div className="p-6 pb-4 bg-gradient-to-r from-blue-950 via-blue-900 to-slate-900 text-white relative">
+                <div className="p-6 pb-4 bg-linear-to-r from-blue-950 via-blue-900 to-slate-900 text-white relative">
                   <div className="flex items-center justify-between gap-2 mb-3">
                     <span className="text-xs font-bold uppercase tracking-wider bg-orange-500 text-white px-3 py-1 rounded-full shadow-sm">
                       {course.badge}
@@ -152,9 +151,9 @@ function OnlineFormations({ onSelectFormation }) {
                     <span className="text-xs text-gray-400 line-through block">{course.prixOriginal}</span>
                     <span className="text-2xl font-black text-orange-500">{course.prix}</span>
                   </div>
-                  <span className="text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-full">
+                  {/* <span className="text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-full">
                     -50% Offre Spéciale
-                  </span>
+                  </span> */}
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-2">
@@ -186,11 +185,11 @@ function OnlineFormations({ onSelectFormation }) {
         </div>
 
         {/* Bannière de réassurance WhatsApp & Support */}
-        <div className="mt-14 bg-gradient-to-r from-blue-900 to-indigo-900 rounded-3xl p-6 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 border border-blue-700/50">
+        <div className="mt-14 bg-linear-to-r from-blue-950 to-indigo-300 rounded-3xl p-6 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 border border-blue-700/50">
           <div className="flex flex-col gap-2 text-center md:text-left">
-            <span className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-orange-400 bg-orange-500/20 px-3 py-1 rounded-full w-fit mx-auto md:mx-0">
+            {/* <span className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-orange-400 bg-orange-500/20 px-3 py-1 rounded-full w-fit mx-auto md:mx-0">
               Assistance & Orientation Gratuite
-            </span>
+            </span> */}
             <h3 className="text-2xl sm:text-3xl font-extrabold text-white">
               Besoin d'aide pour choisir votre formation ?
             </h3>
@@ -201,7 +200,7 @@ function OnlineFormations({ onSelectFormation }) {
 
           <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto shrink-0">
             <a
-              href="https://wa.me/237697712493?text=Bonjour, je souhaite être conseillé pour choisir la formation ou le stage tech le plus adapté à mon profil."
+              href="https://wa.me/237675541573?text=Bonjour, je souhaite être conseillé pour choisir la formation ou le stage tech le plus adapté à mon profil."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3.5 px-6 rounded-xl transition-all transform hover:scale-105 shadow-lg text-sm sm:text-base"

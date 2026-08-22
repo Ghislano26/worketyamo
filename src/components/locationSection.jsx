@@ -10,6 +10,7 @@ import {
   Wifi, 
   Zap
 } from 'lucide-react';
+import { phoneNumber } from '../static/phoneNumber';
 
 function LocationSection() {
   return (
@@ -18,10 +19,10 @@ function LocationSection() {
         
         {/* Titre de section */}
         <div className="flex flex-col items-center text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs sm:text-sm font-semibold mb-3">
+          {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs sm:text-sm font-semibold mb-3">
             <Building2 size={16} className="text-orange-500" />
             <span>Notre Centre & Hub Technologique</span>
-          </div>
+          </div> */}
 
           <h2 className="text-3xl md:text-5xl font-extrabold text-blue-950 tracking-tight">
             Venez nous rencontrer à <span className="text-blue-600">Yaoundé</span>
@@ -39,11 +40,11 @@ function LocationSection() {
           <div className="lg:col-span-5 flex flex-col justify-between gap-6">
             
             {/* Carte adresse */}
-            <div className="bg-gradient-to-br from-blue-950 to-slate-900 text-white rounded-3xl p-6 sm:p-8 shadow-xl relative overflow-hidden">
+            <div className="bg-linear-to-br from-blue-950 to-slate-900 text-white rounded-3xl p-6 sm:p-8 shadow-xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/20 rounded-full blur-2xl pointer-events-none"></div>
 
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 rounded-2xl bg-orange-500 text-white flex items-center justify-center shrink-0 shadow-lg">
+                <div className="w-12 h-12 rounded-2xl text-white flex items-center justify-center shrink-0 shadow-lg">
                   <MapPin size={26} />
                 </div>
                 <div>
@@ -55,25 +56,25 @@ function LocationSection() {
 
               <div className="space-y-4 text-sm text-slate-300 border-t border-slate-700/80 pt-5">
                 <div className="flex items-center gap-3">
-                  <Clock size={18} className="text-orange-400 shrink-0" />
+                  <Clock size={18} className="shrink-0" />
                   <div>
                     <p className="font-semibold text-white">Horaires d'ouverture :</p>
-                    <p className="text-xs text-slate-300">Lundi au Samedi : 08h00 – 18h30 (Non-stop)</p>
+                    <p className="text-xs text-slate-300">Lundi au Samedi : 14h00 – 20h</p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <Phone size={18} className="text-emerald-400 shrink-0" />
+                  <Phone size={18} className="shrink-0" />
                   <div>
                     <p className="font-semibold text-white">Téléphone & WhatsApp :</p>
                     <a href="tel:+237697712493" className="text-xs text-emerald-300 hover:underline">
-                      +237 697 71 24 93
+                     {phoneNumber}
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <Mail size={18} className="text-blue-400 shrink-0" />
+                  <Mail size={18} className=" shrink-0" />
                   <div>
                     <p className="font-semibold text-white">Email de contact :</p>
                     <a href="mailto:contact@worketyamo.com" className="text-xs text-blue-300 hover:underline">
@@ -110,7 +111,7 @@ function LocationSection() {
             {/* Équipements du campus */}
             <div className="bg-blue-50/70 border border-blue-100 rounded-3xl p-6">
               <h4 className="font-bold text-gray-900 text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
-                <Zap size={16} className="text-orange-500" />
+                <Zap size={16} />
                 Infrastructures sur place
               </h4>
 
@@ -137,7 +138,7 @@ function LocationSection() {
           </div>
 
           {/* Colonne de droite : Carte Google Maps Embed */}
-          <div className="lg:col-span-7 bg-gray-100 rounded-3xl border border-gray-200 overflow-hidden shadow-lg flex flex-col min-h-[420px] relative">
+          <div className="lg:col-span-7 bg-gray-100 rounded-3xl border border-gray-200 overflow-hidden shadow-lg flex flex-col min-h-105 relative">
             
             {/* Header de la carte */}
             <div className="bg-white px-5 py-3 border-b border-gray-200 flex items-center justify-between z-10">
@@ -153,7 +154,7 @@ function LocationSection() {
               <iframe
                 title="Localisation Worketyamo Melen Yaoundé Face CHUY"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.7042571342674!2d11.498800075841077!3d3.8643800482594244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcf9a4563a6a9%3A0xb36efae7a61d1523!2sCentre%20Hospitalier%20Universitaire%20de%20Yaound%C3%A9!5e0!3m2!1sfr!2scm!4v1700000000000!5m2!1sfr!2scm"
-                className="w-full h-full min-h-[400px] border-0"
+                className="w-full h-full min-h-100 border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 allowFullScreen

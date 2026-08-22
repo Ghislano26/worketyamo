@@ -5,6 +5,7 @@ import WhatsappFloatingButton from '../components/whatsappFloatingButton';
 import RegistrationModal from '../components/registrationModal';
 import { structureGallery, teamMembers } from '../static/aboutData';
 import { infoBanner } from '../static/Link';
+import { phoneNumber } from '../static/phoneNumber';
 import { 
   Building2, 
   Target, 
@@ -14,7 +15,7 @@ import {
   MessageCircle,
   Heart
 } from 'lucide-react';
-import CountUp from 'react-countup';
+// import CountUp from 'react-countup';
 
 function AboutPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -25,7 +26,7 @@ function AboutPage() {
       <Navbar onReserver={() => setIsModalOpen(true)} />
 
       {/* Hero Header À Propos */}
-      <section className="bg-gradient-to-r from-blue-950 via-blue-900 to-slate-900 text-white py-16 md:py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <section className="bg-linear-to-r font-about text-white py-16 md:py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="max-w-5xl mx-auto text-center relative z-10">
@@ -51,7 +52,7 @@ function AboutPage() {
             </a>
 
             <a
-              href="https://wa.me/237697712493?text=Bonjour, j'aimerais en savoir plus sur l'histoire et les locaux de Worketyamo."
+              href={`https://wa.me/${phoneNumber}?text=Bonjour, j'aimerais en savoir plus sur l'histoire et les locaux de Worketyamo.`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold rounded-xl backdrop-blur-sm transition-all text-sm flex items-center gap-2"
@@ -63,24 +64,7 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* Section Chiffres Clés */}
-      <section className="bg-slate-900 py-10 border-t border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            {infoBanner.map((item) => (
-              <div key={item.id} className="p-4 rounded-2xl bg-slate-800/50 border border-slate-700/60">
-                <p className="text-3xl sm:text-4xl font-black text-orange-400">
-                  <CountUp end={item.end} duration={2.5} enableScrollSpy scrollSpyOnce />
-                  <span>{item.suffix}</span>
-                </p>
-                <p className="text-xs sm:text-sm text-slate-300 font-medium mt-1 tracking-wider uppercase">
-                  {item.subtitle}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+    
 
       {/* Section Vision, Mission & Valeurs */}
       <section className="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -160,10 +144,10 @@ function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-100 border border-blue-200 text-blue-800 text-xs sm:text-sm font-semibold mb-3">
+            {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-100 border border-blue-200 text-blue-800 text-xs sm:text-sm font-semibold mb-3">
               <Building2 size={16} className="text-orange-500" />
               <span>Visite Virtuelle & Espaces</span>
-            </div>
+            </div> */}
 
             <h2 className="text-3xl md:text-5xl font-extrabold text-blue-950 tracking-tight">
               Découvrez la structure <span className="text-orange-500">Worketyamo</span>
@@ -175,7 +159,7 @@ function AboutPage() {
           </div>
 
           {/* GRID BENTO D'IMAGES DE LA STRUCTURE */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[280px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-70">
             {structureGallery.map((item) => (
               <div
                 key={item.id}
@@ -191,7 +175,7 @@ function AboutPage() {
                 />
 
                 {/* Overlay dégradé */}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent flex flex-col justify-end p-6 sm:p-8 text-white transition-opacity">
+                <div className="absolute inset-0 bg-linear-to-t from-slate-950/90 via-slate-950/40 to-transparent flex flex-col justify-end p-6 sm:p-8 text-white transition-opacity">
                   <span className="text-xs font-bold uppercase tracking-wider text-orange-400 mb-1">
                     {item.categorie}
                   </span>
@@ -211,11 +195,11 @@ function AboutPage() {
             ))}
           </div>
 
-          <div className="mt-10 text-center">
+          {/* <div className="mt-10 text-center">
             <p className="text-xs sm:text-sm text-gray-500">
               📍 Adresse du centre : <strong>Melen, Yaoundé — Directement en face de l'entrée principale du CHUY</strong>
             </p>
-          </div>
+          </div> */}
 
         </div>
       </section>
@@ -223,10 +207,10 @@ function AboutPage() {
       {/* Section L'Équipe & Mentors */}
       <section className="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-100 border border-orange-200 text-orange-800 text-xs sm:text-sm font-semibold mb-3">
+          {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-100 border border-orange-200 text-orange-800 text-xs sm:text-sm font-semibold mb-3">
             <Users size={16} className="text-orange-500" />
             <span>Formateurs & Mentors Experts</span>
-          </div>
+          </div> */}
 
           <h2 className="text-3xl md:text-5xl font-extrabold text-blue-950 tracking-tight">
             Une équipe dévouée à votre <span className="text-blue-600">succès</span>
@@ -274,7 +258,7 @@ function AboutPage() {
       </section>
 
       {/* Section Appel à l'action */}
-      <section className="bg-gradient-to-r from-blue-900 to-indigo-950 text-white py-16 px-4 sm:px-6 lg:px-8 border-t border-blue-800">
+      <section className="bg-linear-to-r font-about text-white py-16 px-4 sm:px-6 lg:px-8 border-t border-blue-800">
         <div className="max-w-5xl mx-auto text-center space-y-6">
           <h2 className="text-3xl sm:text-4xl font-extrabold">
             Envie de nous rejoindre ou de visiter les locaux à Melen ?
@@ -292,13 +276,13 @@ function AboutPage() {
             </button>
 
             <a
-              href="https://wa.me/237697712493?text=Bonjour, je souhaite visiter le centre Worketyamo à Melen face au CHUY."
+              href={`https://wa.me/${phoneNumber}?text=Bonjour, je souhaite visiter le centre Worketyamo à Melen face au CHUY.`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-2xl shadow-xl transition-all text-sm sm:text-base flex items-center gap-2"
             >
               <MessageCircle size={20} />
-              <span>WhatsApp Direct (+237 697 71 24 93)</span>
+              <span>WhatsApp Direct {phoneNumber}</span>
             </a>
           </div>
         </div>

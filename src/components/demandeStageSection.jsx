@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { phoneNumber } from '../static/phoneNumber';
 import { 
   Send, 
   MessageCircle, 
@@ -10,7 +11,6 @@ import {
   Phone, 
   User, 
   BookOpen, 
-  Sparkles,
   MapPin
 } from 'lucide-react';
 
@@ -68,12 +68,12 @@ function DemandeStageSection() {
     setIsSubmitted(true);
     
     // Ouvre automatiquement WhatsApp
-    const whatsappUrl = `https://wa.me/237697712493?text=${generateWhatsAppMessage()}`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${generateWhatsAppMessage()}`;
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
   const handleDirectWhatsApp = () => {
-    const whatsappUrl = `https://wa.me/237697712493?text=${generateWhatsAppMessage()}`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${generateWhatsAppMessage()}`;
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
@@ -87,10 +87,10 @@ function DemandeStageSection() {
         
         {/* Titre de section */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/20 border border-orange-500/30 text-orange-400 text-xs sm:text-sm font-semibold mb-4">
+          {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/20 border border-orange-500/30 text-orange-400 text-xs sm:text-sm font-semibold mb-4">
             <Sparkles size={15} />
             <span>Portail Apprenants & Stagiaires</span>
-          </div>
+          </div> */}
 
           <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight">
             Faites votre demande de <span className="text-orange-400">Formation</span> ou <span className="text-blue-400">Stage</span>
@@ -122,7 +122,7 @@ function DemandeStageSection() {
                     className="flex-1 inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3.5 px-6 rounded-xl transition-all shadow-lg hover:cursor-pointer"
                   >
                     <MessageCircle size={20} />
-                    <span>Ouvrir WhatsApp (+237 697 71 24 93)</span>
+                    <span>Ouvrir WhatsApp ({phoneNumber})</span>
                   </button>
                   <button
                     onClick={() => setIsSubmitted(false)}
@@ -150,7 +150,7 @@ function DemandeStageSection() {
                           onClick={() => setFormData({ ...formData, typeDemande: `${t.label} (${t.desc})` })}
                           className={`p-3.5 rounded-2xl border transition-all cursor-pointer flex items-start gap-3 ${
                             isSelected
-                              ? "bg-blue-600/30 border-blue-400 ring-2 ring-blue-500/50"
+                              ? "bg-green-200/30 border-blue-400 ring-2 ring-blue-500/50"
                               : "bg-slate-900/50 border-slate-700 hover:border-slate-500 hover:bg-slate-900/80"
                           }`}
                         >
@@ -190,12 +190,12 @@ function DemandeStageSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-medium text-slate-300 mb-1.5 flex items-center gap-1.5">
-                      <User size={14} className="text-blue-400" />
+                      <User size={14} />
                       Nom et Prénom *
                     </label>
                     <input
                       type="text"
-                      placeholder="Ex: Jean Paul Nguema"
+                      placeholder="Ex: Ghislain Ateba Chouacha"
                       value={formData.nom}
                       onChange={(e) => setFormData({ ...formData, nom: e.target.value })}
                       required
@@ -205,7 +205,7 @@ function DemandeStageSection() {
 
                   <div>
                     <label className="block text-xs font-medium text-slate-300 mb-1.5 flex items-center gap-1.5">
-                      <Phone size={14} className="text-emerald-400" />
+                      <Phone size={14} />
                       Numéro WhatsApp / Téléphone *
                     </label>
                     <input
@@ -222,7 +222,7 @@ function DemandeStageSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-medium text-slate-300 mb-1.5 flex items-center gap-1.5">
-                      <GraduationCap size={14} className="text-orange-400" />
+                      <GraduationCap size={14} />
                       École / Université / Profession actuelle
                     </label>
                     <input
@@ -236,7 +236,7 @@ function DemandeStageSection() {
 
                   <div>
                     <label className="block text-xs font-medium text-slate-300 mb-1.5 flex items-center gap-1.5">
-                      <Calendar size={14} className="text-blue-400" />
+                      <Calendar size={14}  />
                       Date de début souhaitée
                     </label>
                     <select
@@ -270,7 +270,7 @@ function DemandeStageSection() {
                 <div className="flex flex-col sm:flex-row gap-3 pt-2">
                   <button
                     type="submit"
-                    className="flex-1 inline-flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-3.5 px-6 rounded-xl transition-all shadow-lg hover:cursor-pointer text-sm sm:text-base"
+                    className="flex-1 inline-flex items-center justify-center gap-2 bg-linear-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-3.5 px-6 rounded-xl transition-all shadow-lg hover:cursor-pointer text-sm sm:text-base"
                   >
                     <Send size={18} />
                     <span>Envoyer & Valider ma demande</span>
@@ -287,7 +287,7 @@ function DemandeStageSection() {
                 </div>
 
                 <p className="text-xs text-center text-slate-400">
-                  ⚡ Réponse garantie sous 24h par notre équipe pédagogique de Yaoundé Melen.
+                  Réponse garantie sous 24h par notre équipe pédagogique de Yaoundé Melen.
                 </p>
 
               </form>
@@ -300,12 +300,12 @@ function DemandeStageSection() {
             {/* Box Localisation Melen */}
             <div className="bg-slate-800/80 border border-slate-700 rounded-3xl p-6 text-white space-y-4">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-2xl bg-orange-500/20 text-orange-400 flex items-center justify-center shrink-0">
+                <div className="w-12 h-12 rounded-2xl bg-orange-500/20 flex items-center justify-center shrink-0">
                   <MapPin size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold text-white text-base">Campus Worketyamo</h4>
-                  <p className="text-xs text-orange-400 font-semibold">Melen, Yaoundé — Face CHUY</p>
+                  <p className="text-xs text-orange-400 font-semibold">Melen, Yaoundé ,  Face CHUY</p>
                 </div>
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
@@ -313,14 +313,13 @@ function DemandeStageSection() {
               </p>
               <div className="pt-2 border-t border-slate-700 flex justify-between text-xs text-slate-400">
                 <span>Horaires d'accueil :</span>
-                <span className="text-slate-200 font-medium">Lun - Sam : 08h00 - 18h30</span>
+                <span className="text-slate-200 font-medium">Lun - Sam : 13h00 - 20h</span>
               </div>
             </div>
 
             {/* Box Avantages Clés */}
-            <div className="bg-gradient-to-br from-blue-900/60 to-slate-800 border border-blue-700/40 rounded-3xl p-6 text-white space-y-4">
+            <div className="bg-linear-to-br from-blue-900/60 to-slate-800 border border-blue-700/40 rounded-3xl p-6 text-white space-y-4">
               <h4 className="font-bold text-lg text-white flex items-center gap-2">
-                <Sparkles size={18} className="text-orange-400" />
                 Pourquoi nous choisir ?
               </h4>
               <ul className="space-y-3 text-xs text-slate-300">
@@ -351,11 +350,11 @@ function DemandeStageSection() {
                 </div>
                 <div>
                   <p className="text-xs text-emerald-300 font-medium">Hotline WhatsApp directe</p>
-                  <p className="text-sm font-bold text-white">+237 697 71 24 93</p>
+                  <p className="text-sm font-bold text-white">{phoneNumber}</p>
                 </div>
               </div>
               <a
-                href="https://wa.me/237697712493?text=Bonjour Worketyamo, je souhaite avoir un renseignement rapide."
+                href={`https://wa.me/${phoneNumber}?text=Bonjour Worketyamo, je souhaite avoir un renseignement sur les formations.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-3 py-1.5 bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-semibold rounded-lg transition-colors"

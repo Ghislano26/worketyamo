@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+import { phoneNumber } from '../static/phoneNumber';
 import { 
   MapPin, 
   Phone, 
@@ -24,13 +25,13 @@ function Footer() {
 
           <div className="flex flex-wrap items-center gap-3">
             <a
-              href="https://wa.me/237697712493?text=Bonjour Worketyamo ! J'aimerais m'inscrire à une formation ou postuler à un stage."
+              href={`https://wa.me/${phoneNumber}?text=Bonjour Worketyamo ! J'aimerais m'inscrire à une formation ou postuler à un stage.`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-5 rounded-xl text-sm transition-all shadow-md"
             >
               <MessageCircle size={18} />
-              <span>WhatsApp : +237 697 71 24 93</span>
+              <span>WhatsApp : {phoneNumber}</span>
             </a>
 
             <Link
@@ -80,7 +81,7 @@ function Footer() {
                 <Globe size={18} />
               </a>
               <a
-                href="https://wa.me/237697712493"
+                href={`https://wa.me/${phoneNumber}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Code"
@@ -89,7 +90,7 @@ function Footer() {
                 <Code2 size={18} />
               </a>
               <a
-                href="https://wa.me/237697712493"
+                href={`https://wa.me/${phoneNumber}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Partage"
@@ -173,19 +174,19 @@ function Footer() {
             </h4>
             <ul className="space-y-3 text-sm text-slate-300">
               <li className="flex items-start gap-2.5">
-                <MapPin size={18} className="text-orange-400 shrink-0 mt-0.5" />
-                <span>Melen, Yaoundé — En face du CHUY, Cameroun</span>
+                <MapPin size={18} className="shrink-0 mt-0.5" />
+                <span>Melen, Yaoundé, En face du CHUY, Cameroun</span>
               </li>
               <li className="flex items-center gap-2.5">
-                <Phone size={18} className="text-emerald-400 shrink-0" />
-                <a href="tel:+237697712493" className="hover:underline">+237 697 71 24 93</a>
+                <Phone size={18} className="shrink-0" />
+                <a href="tel:+237697712493" className="hover:underline">{phoneNumber}</a>
               </li>
               <li className="flex items-center gap-2.5">
-                <Mail size={18} className="text-blue-400 shrink-0" />
+                <Mail size={18} className="shrink-0" />
                 <a href="mailto:contact@worketyamo.com" className="hover:underline">contact@worketyamo.com</a>
               </li>
               <li className="flex items-center gap-2.5">
-                <Globe size={18} className="text-purple-400 shrink-0" />
+                <Globe size={18} className=" shrink-0" />
                 <span>www.worketyamo.com</span>
               </li>
             </ul>
