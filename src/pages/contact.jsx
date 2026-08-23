@@ -3,8 +3,9 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import WhatsappFloatingButton from '../components/whatsappFloatingButton';
 import RegistrationModal from '../components/registrationModal';
-import { faqList } from '../static/formationsData';
-import { phoneNumber } from '../static/phoneNumber';
+
+
+const phoneNumber = '+237675541573'
 import { 
   MapPin, 
   Phone, 
@@ -21,6 +22,7 @@ import {
   User,
   GraduationCap
 } from 'lucide-react';
+import FAQ from '../components/FAQ';
 
 function ContactPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -38,7 +40,7 @@ function ContactPage() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const motifsList = [
-    "Demande de formation présentielle à Melen (Yaoundé)",
+    "Demande de formation présentielle",
     "Demande de formation en ligne / Cours Udemy",
     "Demande de stage académique (BTS, Licence, Ingénieur, Master)",
     "Demande de stage professionnel",
@@ -66,9 +68,7 @@ function ContactPage() {
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
-  const toggleFaq = (idx) => {
-    setActiveFaqIdx(activeFaqIdx === idx ? null : idx);
-  };
+ 
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col antialiased text-gray-800">
@@ -85,7 +85,7 @@ function ContactPage() {
           </div> */}
 
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-white mb-6">
-            Parlons de votre <span className="text-orange-400">avenir tech</span>
+            Parlons de votre <span className="text-white">avenir tech</span>
           </h1>
 
           <p className="max-w-3xl mx-auto text-blue-100 text-base sm:text-lg leading-relaxed">
@@ -139,7 +139,7 @@ function ContactPage() {
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5 flex items-center gap-1">
+                    <label className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5 flex items-center gap-1">
                       <User size={13} />
                       Nom complet *
                     </label>
@@ -154,7 +154,7 @@ function ContactPage() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5 flex items-center gap-1">
+                    <label className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5 flex items-center gap-1">
                       <Phone size={13} />
                       Téléphone / WhatsApp *
                     </label>
@@ -171,7 +171,7 @@ function ContactPage() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5 flex items-center gap-1">
+                    <label className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5 flex items-center gap-1">
                       <Mail size={13}  />
                       Email (Optionnel)
                     </label>
@@ -185,7 +185,7 @@ function ContactPage() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5 flex items-center gap-1">
+                    <label className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5 flex items-center gap-1">
                       <GraduationCap size={13}  />
                       École / Université / Statut
                     </label>
@@ -273,7 +273,7 @@ function ContactPage() {
               <div className="space-y-3.5 text-xs sm:text-sm text-slate-300 border-t border-slate-700/80 pt-4">
                 <div className="flex items-center gap-3">
                   <Clock size={16} className="shrink-0" />
-                  <span>Ouvert du Lundi au Samedi : 08h00 – 18h30</span>
+                  <span>Ouvert du Lundi au Samedi : 14h00 – 20h00</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone size={16} className="shrink-0" />
@@ -319,53 +319,7 @@ function ContactPage() {
       </section>
 
       {/* Section FAQ (Foire Aux Questions) */}
-      <section className="py-16 bg-white border-t border-gray-200">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs sm:text-sm font-semibold mb-3">
-              <HelpCircle size={16} className="text-orange-500" />
-              <span>Questions Fréquentes</span>
-            </div>
-
-            <h2 className="text-2xl sm:text-4xl font-extrabold text-blue-950 tracking-tight">
-              Tout ce que vous devez savoir
-            </h2>
-            <p className="text-gray-500 text-sm sm:text-base mt-2">
-              Les réponses aux questions les plus posées par nos candidats, apprenants et stagiaires.
-            </p>
-          </div>
-
-          <div className="space-y-4">
-            {faqList.map((item, idx) => {
-              const isOpen = activeFaqIdx === idx;
-              return (
-                <div
-                  key={idx}
-                  className="border border-gray-200 rounded-2xl overflow-hidden transition-all bg-gray-50/50"
-                >
-                  <button
-                    onClick={() => toggleFaq(idx)}
-                    className="w-full px-6 py-4 text-left flex items-center justify-between gap-4 font-bold text-gray-900 hover:text-blue-600 transition-colors hover:cursor-pointer text-sm sm:text-base"
-                  >
-                    <span>{item.q}</span>
-                    <span className="p-1 rounded-lg bg-gray-100 text-gray-600 shrink-0">
-                      {isOpen ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-                    </span>
-                  </button>
-
-                  {isOpen && (
-                    <div className="px-6 pb-5 pt-1 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-gray-100 bg-white">
-                      {item.a}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-
-        </div>
-      </section>
+      <FAQ/>
 
       <Footer />
       <WhatsappFloatingButton />

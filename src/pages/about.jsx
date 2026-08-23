@@ -156,7 +156,7 @@ function AboutPage() {
             <h2 className="text-3xl md:text-5xl font-extrabold text-blue-950 tracking-tight">
               Découvrez la structure <span className="text-orange-500">Worketyamo</span>
             </h2>
-            <div className="w-20 h-1.5 bg-blue-600 rounded-full mt-4 mb-4 mx-auto"></div>
+            <div className="w-20 h-1.5 bg-blue-900 rounded-full mt-4 mb-4 mx-auto"></div>
             <p className="text-gray-600 text-base md:text-lg">
               Un cadre de travail moderne situé à <span className="font-semibold text-gray-900">Melen, Yaoundé (Face au CHUY)</span>, pensé pour stimuler la créativité, la concentration et la collaboration tech.
             </p>

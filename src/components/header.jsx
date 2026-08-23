@@ -18,9 +18,9 @@ function Header({ onVoirFormations }) {
   return (
     <header className='w-full min-h-130 md:min-h-150 flex flex-col md:flex-row gap-8 md:gap-3 px-4 sm:px-6 md:px-12 py-10 md:py-16 items-center justify-between'>
         
-        <div className='flex-1 flex flex-col justify-center gap-6 md:gap-8 md:pl-12 lg:pl-24'>
+        <div className='flex-1 flex flex-col justify-center gap-6 md:gap-8 md:pl-12 lg:pl-73'>
             
-            <div className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold w-full leading-tight'> 
+            <div className='text-3xl  sm:text-4xl md:text-5xl lg:text-6xl font-bold w-full leading-tight'> 
                 <h1 className='text-blue-950'>
                   La clé d'une carrière <br />
                   dans la tech. <br />
@@ -69,11 +69,11 @@ function Header({ onVoirFormations }) {
         
 
 
-        <div className='flex-1  flex md:justify-center justify-center items-center'>
+        <div className='flex-1  flex md:justify-center justify-center items-center lg:pr-40'>
             <img 
               src={image} 
               alt="Worketyamo formation tech et développement au Cameroun" 
-              className='w-[80%] sm:w-[70%] md:w-[85%] max-w-md h-auto animate-float object-contain'
+              className='w-[80%] sm:w-[70%] md:w-[85%]   max-w-md h-auto animate-float object-contain'
             />
         </div>
 

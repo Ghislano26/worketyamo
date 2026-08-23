@@ -140,8 +140,8 @@ export const allFormationsCatalog = [
     type: "presentiel",
     categorie: "Développement Web",
     duree: "8 mois",
-    tarif: "150 000 FCFA",
-    badge: "Présentiel — Yaoundé (Melen)",
+    tarif: "350 000 FCFA",
+    badge: "Présentiel",
     description: "HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, Tailwind. Construis des applications web complètes de A à Z avec un encadrement quotidien.",
     pointsForts: [
       "3 jours de cours présentiels / semaine à Melen",
@@ -163,9 +163,9 @@ export const allFormationsCatalog = [
     titre: "DevOps, Administration Système & Cloud",
     type: "presentiel",
     categorie: "Cloud & DevOps",
-    duree: "10 mois",
-    tarif: "250 000 FCFA",
-    badge: "Présentiel — Yaoundé (Melen)",
+    duree: "12 mois",
+    tarif: "500 000 FCFA",
+    badge: "Présentiel",
     description: "Linux, Docker, CI/CD, GitHub Actions, déploiement cloud AWS/GCP, monitoring et sécurité serveur. Maîtrise l'infrastructure des applications modernes.",
     pointsForts: [
       "Pratique sur serveurs virtuels et cloud réels",
@@ -184,50 +184,48 @@ export const allFormationsCatalog = [
   },
   {
     id: "pres-data-ia",
-    titre: "Data Science, Analyse de Données & IA",
+    titre: "Développement Frontend",
     type: "presentiel",
     categorie: "Data & IA",
     duree: "6 mois",
-    tarif: "180 000 FCFA",
-    badge: "Présentiel — Yaoundé (Melen)",
-    description: "Python, SQL, Business Intelligence (Power BI), Machine Learning et intégration d'IA. Transformez les données brutes en décisions stratégiques.",
+    tarif: "175 000 FCFA",
+    badge: "Présentiel",
+    description: "HTML, CSS, JavaScript, React, Tailwind CSS. Création d\'interfaces modernes, interactives et responsives centrés sur l'espérience utilisateur.",
     pointsForts: [
-      "Cas réels appliqués aux entreprises camerounaises et africaines",
-      "Dashboards interactifs et storytelling de données",
-      "Ateliers de Machine Learning pratique",
-      "Certification et soutenance finale",
+      "Projets réels basés sur des cas d'entreprise camerounaises",
+      "Maîtrise de React.js et de l'écosystème moderne",
+      "Portfolio professionnel déployé en ligne",
+      "Certification et accompagnement à l'emploi",
     ],
-    prerequis: "Esprit logique et curiosité pour l'analyse de données.",
+    prerequis: "Avoir un oridnateur portable, notions de base en informatique. Aucune expérience en code requise",
     programme: [
-      "Module 1 : Python pour la Data & requêtes SQL avancées",
-      "Module 2 : Data Cleaning & Visualisation (Pandas, Matplotlib, Power BI)",
-      "Module 3 : Statistiques appliquées & Exploration de données",
-      "Module 4 : Algorithmes de Machine Learning (Régression, Classification, Clustering)",
-      "Module 5 : Déploiement de modèles prédictifs et Dashboards Web",
+      "Module 1 : Fondamentaux du web (HTML5, CSS3, Responsive Design)",
+      "Module 2 : JavaScript Moderne (ES6+, DOM, API)",
+      "Module 3 : Framework Frontend (React.js, Hooks, Routing, Next.js)",
+      "Module 4 : Styling Avancé & Outils Pros (Tailwind CSS, GIT, GITHUB, Déploiment Versel)"
     ]
   },
   {
     id: "pres-mobile",
-    titre: "Développement d'Applications Mobiles (Flutter)",
+    titre: "Développement Backend",
     type: "presentiel",
     categorie: "Mobile",
-    duree: "6 mois",
-    tarif: "160 000 FCFA",
-    badge: "Présentiel — Yaoundé (Melen)",
-    description: "Créez des applications mobiles modernes, fluides et performantes pour Android et iOS avec le framework Flutter et le langage Dart.",
+    duree: "4 mois",
+    tarif: "175 000 FCFA",
+    badge: "Présentiel",
+    description: "Node.js, Express, MongoDB, PostgreSQL API REST, authentification JWT. Développement de la logique serveur, gestion des bases de données et sécurisations des applications",
     pointsForts: [
-      "Publication réelle sur Google Play Store",
-      "Intégration d'APIs tierces et paiements Mobile Money (Orange/MTN)",
-      "Gestion d'état avancée et architecture propre",
-      "Support continu en présentiel",
+      "Création d'API REST complètes et sécurisées",
+      "Maîtrise des bases de données NoSQL avec MongoDB",
+      "Authentification, autorisation et sécurité backend ",
+      "03 Projets finaux",
     ],
-    prerequis: "Avoir déjà quelques notions de programmation est un plus.",
+    prerequis: "Avoir un oridnateur portable, Bonne logique. La maîtrise des bases du frontend est un plus mais non obligatoire",
     programme: [
-      "Module 1 : Maîtrise du langage Dart & Programmation Orientée Objet",
-      "Module 2 : Widgets Flutter, UI responsive et animations",
-      "Module 3 : Backend Firebase (Auth, Firestore, Storage)",
-      "Module 4 : State Management (Provider, Bloc ou Riverpod)",
-      "Module 5 : Publication et monétisation d'applications mobiles",
+      "Module 1 : Fondamentaux Backend & Node.js (Serveur, NPM, Express)",
+      "Module 2 : Bases de Données (MongoDB, Prisma, PostgreSQL, Modélisation",
+      "Module 3 : API REST & Logique Métier (CRUD, Validation, Architecture MVC)",
+      "Module 4 : Sécurité & Déploiement (JWT, Hashage, Déploiement Render/Railway)"
     ]
   },
   {
@@ -279,6 +277,7 @@ export const allFormationsCatalog = [
 ];
 
 export const faqList = [
+  
   {
     q: "Où se trouve exactement le centre de formation Worketyamo ?",
     a: "Nous sommes situés à Yaoundé, dans le quartier Melen, exactement en face du Centre Hospitalier Universitaire de Yaoundé (CHUY). C'est un emplacement très accessible desservi par les taxis et transports en commun."
@@ -286,6 +285,10 @@ export const faqList = [
   {
     q: "Comment postuler pour un stage académique ou professionnel ?",
     a: "Vous pouvez faire votre demande directement sur notre site via le formulaire en ligne ou en cliquant sur le bouton 'Discuter sur WhatsApp'. Vous pourrez préciser votre filière, votre école, vos dates de stage et le sujet souhaité. Notre équipe vous répond sous 24h."
+  },
+  {
+    q: "Comment se déroule les admission à Worketyamo ?",
+    a: "Les admissions se font par test d'évaluation de niveau. Les frais de test s'élèvent à 5000 FCFA, et l'inscription à 25 000 FCFA"
   },
   {
     q: "Peut-on payer les formations en plusieurs tranches ?",

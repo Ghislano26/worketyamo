@@ -62,7 +62,7 @@ function Formations() {
           <FormationCard 
             titre={'Développement Web FullStack'}
             description={'HTML, CSS, Javascript, React, Nodejs, Express, MongoDB. Construis des applications web complètes de A à Z.'}
-            duree={'8 mois'}
+            duree={'08 mois'}
             tarif={350000}
             onReserver={()=>navigate('/contact')}
           />
@@ -79,11 +79,11 @@ function Formations() {
           />
         </ScrollAnimate>
 
-         <ScrollAnimate>
+         {/* <ScrollAnimate>
           <FormationCard 
             titre={'Frontend'}
             description={'HTML, CSS, JavaScript, React, Tailwind CSS. Création d\'interfaces modernes, interactives et responsives centrés sur l\'espérience utilisateur'}
-            duree={'6 mois'}
+            duree={'06 mois'}
             tarif={175000}
             onReserver={()=>navigate('/contact')}
           />
@@ -93,11 +93,11 @@ function Formations() {
           <FormationCard 
             titre={'Backend'}
             description={'Node.js, Express, MongoDB, PostgreSQL API REST, authentification JWT. Développement de la logique serveur, gestion des bases de données et sécurisations des applications'}
-            duree={'4 mois'}
+            duree={'04 mois'}
             tarif={175000}
             onReserver={()=>navigate('/contact')}
           />
-        </ScrollAnimate>
+        </ScrollAnimate> */}
 
         
 
@@ -114,9 +114,39 @@ function Formations() {
         <ScrollAnimate>
           <FormationCard 
             titre={'Formation Cloud + Passage certification SAA'}
-            description={'Linux, Docker, CI/CD, GitHub Actions, déploiement cloud. Maitrise l\'infrastructure des applications modernes.'}
-            duree={'7 mois'}
+            description={'AWS, EC2, VPC, IAM, Cloud Architecture. Préparation complète aux certifications AWS'}
+            duree={'06 mois'}
             tarif={350000}
+            onReserver={()=>navigate('/contact')}
+          />
+        </ScrollAnimate>
+
+        <ScrollAnimate>
+          <FormationCard 
+            titre={'Devops Engineer'}
+            description={'AWS DevOps, Jenkins, Kubernetes, Monitoring, Iac. Préparation à la certification DevOps Engineer Professional'}
+            duree={'06 mois'}
+            tarif={350000}
+            onReserver={()=>navigate('/contact')}
+          />
+        </ScrollAnimate>
+
+        <ScrollAnimate>
+          <FormationCard 
+            titre={'CKA (KUBERNETES)'}
+            description={'Kubernetes, Cluster, Pods, Services, Sécurité. Préparation intensive à la certification Certified Kubernetes Administrator (CKA)'}
+            duree={'04 mois'}
+            tarif={250000}
+            onReserver={()=>navigate('/contact')}
+          />
+        </ScrollAnimate>
+
+        <ScrollAnimate>
+          <FormationCard 
+            titre={'TERRAFORM'}
+            description={'Infrastructure as Code, Terraform, AWS, Module, State. Automatisez et versionnez votre infrastructure cloud'}
+            duree={'05 mois'}
+            tarif={300000}
             onReserver={()=>navigate('/contact')}
           />
         </ScrollAnimate>

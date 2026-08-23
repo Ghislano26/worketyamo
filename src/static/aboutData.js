@@ -134,7 +134,7 @@ export const teamMembers = [
     nom: "Mohaman Adama",
     role: "Responsable Pédagogique ",
     image: `${Adama}`,
-    bio: "Directrice Générale & Responsable Pédagogique chez Worketyamo. Pilote stratégique de la formation, gestionnaire administrative et accompagnatrice bienveillante pour les apprenants en reconversion professionnelle."
+    bio: "Directeur Général & Responsable Pédagogique chez Worketyamo. Pilote stratégique de la formation, gestionnaire administrative et accompagnatrice bienveillante pour les apprenants en reconversion professionnelle."
   },
   {
     nom: "Ghislain Ateba",
@@ -145,9 +145,9 @@ export const teamMembers = [
   },
   {
     nom: "Tidjani Ahmed",
-    role: "Développeur web fullstack & Mobile",
+    role: "Développeur web fullstack",
     image: `${Ahmed}`,
-    bio: "Formateur & Développeur Fullstack et Mobile chez Worketyamo. Responsable Technique Cloud-Dev et Infrastructure Pédagogique"
+    bio: "Formateur & Développeur Fullstack chez Worketyamo. Responsable Technique Cloud-Dev et Infrastructure Pédagogique"
   },
   {
     nom: "Barthez",

@@ -133,7 +133,7 @@ function FormationsPage() {
 
             {[
               { id: 'tous', label: 'Toutes les formations' },
-              { id: 'presentiel', label: 'Présentiel (Melen - Yaoundé)' },
+              { id: 'presentiel', label: 'Présentiel' },
               { id: 'online', label: 'En Ligne & Udemy' },
               { id: 'stage', label: 'Stages (Académique & Pro)' },
               { id: 'web_mobile', label: 'Web & Mobile' },
