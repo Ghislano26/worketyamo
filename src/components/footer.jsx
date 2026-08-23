@@ -179,7 +179,7 @@ function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone size={18} className="shrink-0" />
-                <a href="tel:+237675541575" className="hover:underline">{phoneNumber}</a>
+                <a href="tel:+237675541575" className="hover:underline">{phoneNumber} / 6 55 19 35 30</a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail size={18} className="shrink-0" />

@@ -16,7 +16,7 @@ function Header({ onVoirFormations }) {
   };
 
   return (
-    <header className='w-full min-h130 md:min-h-150 flex flex-col md:flex-row gap-8 md:gap-3 px-4 sm:px-6 md:px-12 py-10 md:py-16 items-center justify-between'>
+    <header className='w-full min-h-130 md:min-h-150 flex flex-col md:flex-row gap-8 md:gap-3 px-4 sm:px-6 md:px-12 py-10 md:py-16 items-center justify-between'>
         
         <div className='flex-1 flex flex-col justify-center gap-6 md:gap-8 md:pl-12 lg:pl-24'>
             
@@ -69,7 +69,7 @@ function Header({ onVoirFormations }) {
         
 
 
-        <div className='flex-1 flex md:justify-center justify-center items-center'>
+        <div className='flex-1  flex md:justify-center justify-center items-center'>
             <img 
               src={image} 
               alt="Worketyamo formation tech et développement au Cameroun" 
