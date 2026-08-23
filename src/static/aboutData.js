@@ -1,8 +1,9 @@
+import Ahmed from "../assets/images/Ahmed.png";
 import ghlogo from '../assets/images/gh.jpg'
 import ghmodif from '../assets/images/ghmodif.png'
-import haruna from '../assets/images/haruna.jpeg'
+import haruna from '../assets/images/Haruna.png'
 import essy from '../assets/images/essy.png'
-import idriss from '../assets/images/idriss.jpeg'
+import idriss from '../assets/images/Idriss.png'
 import barthez from '../assets/images/barthez.jpg'
 import salle from '../assets/images/salle.jpg'
 import salle1 from '../assets/images/salle1.jpg'
@@ -133,6 +134,12 @@ export const teamMembers = [
     role: "Trainer & Fullstack and Mobile Developer",
     // specialite: "React, NodeJs, Express, MongoDB, SQL",
     image: `${ghmodif}`,
+    bio: "Formateur & Développeur Fullstack et Mobile chez Worketyamo. Responsable Technique Cloud-Dev et Infrastructure Pédagogique"
+  },
+  {
+    nom: "Tidjani Ahmed",
+    role: "Développeur web fullstack & Mobile",
+    image: `${Ahmed}`,
     bio: "Formateur & Développeur Fullstack et Mobile chez Worketyamo. Responsable Technique Cloud-Dev et Infrastructure Pédagogique"
   },
   {
