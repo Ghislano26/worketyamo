@@ -1,4 +1,5 @@
 import Ahmed from "../assets/images/Ahmed.png";
+import Adama from "../assets/images/Adama.png"
 import ghlogo from '../assets/images/gh.jpg'
 import ghmodif from '../assets/images/ghmodif.png'
 import haruna from '../assets/images/Haruna.png'
@@ -127,6 +128,12 @@ export const teamMembers = [
     role: "Responsable Pédagogique & Directrice",
     // specialite: "UI/UX Architecture, Next.js, Flutter",
     image: `${essy}`,
+    bio: "Directrice Générale & Responsable Pédagogique chez Worketyamo. Pilote stratégique de la formation, gestionnaire administrative et accompagnatrice bienveillante pour les apprenants en reconversion professionnelle."
+  },
+  {
+    nom: "Mohaman Adama",
+    role: "Responsable Pédagogique ",
+    image: `${Adama}`,
     bio: "Directrice Générale & Responsable Pédagogique chez Worketyamo. Pilote stratégique de la formation, gestionnaire administrative et accompagnatrice bienveillante pour les apprenants en reconversion professionnelle."
   },
   {
