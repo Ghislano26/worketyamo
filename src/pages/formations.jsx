@@ -76,7 +76,7 @@ function FormationsPage() {
   };
 
   const handleWhatsAppContact = (item) => {
-    const phoneNumber = "237697712493";
+    const phoneNumber = "237675541573";
     const text = encodeURIComponent(
       `Bonjour Worketyamo ! J'aimerais m'inscrire ou avoir des informations détaillées sur le programme : "${item.titre}" (${item.badge}).`
     );
