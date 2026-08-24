@@ -13,11 +13,11 @@ body{
   font-family: var(--font-text);
 }
 .font-about{
-  background-image: url("assets/images/w17.jpg");
+  background-image: url("assets/images/w03-pro.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
+
 /* @keyframes float {
   0%, 100% {
     transform: translateY(0);

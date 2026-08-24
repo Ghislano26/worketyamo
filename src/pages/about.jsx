@@ -27,7 +27,7 @@ function AboutPage() {
 
         
       {/* Hero Header À Propos */}
-      <section className="bg-linear-to-r font-about text-white py-16 md:py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <section className="font-about text-white py-16 md:py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="max-w-5xl mx-auto text-center relative z-10">
