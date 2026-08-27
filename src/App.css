@@ -13,9 +13,10 @@ body{
   font-family: var(--font-text);
 }
 .font-about{
-  background-image: url("assets/images/w16.jpg");
+  background-image: linear-gradient(rgba(0,0,0, 0.15), rgba(0,0,0,0.75)), url("assets/images/salle4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 /* @keyframes float {
   0%, 100% {

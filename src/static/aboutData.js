@@ -1,6 +1,7 @@
 import Ahmed from "../assets/images/Ahmed.png";
 import Adama from "../assets/images/Adama.png"
 import ghlogo from '../assets/images/gh.jpg'
+import ghgroup from '../assets/images/gh-group.jpeg'
 import ghmodif from '../assets/images/ghmodif.png'
 import haruna from '../assets/images/Haruna.png'
 import essy from '../assets/images/essy.png'
@@ -70,7 +71,7 @@ export const structureGallery2 = [
     titre: "Salle de Code & Laboratoire Informatique",
     categorie: "Espace d'apprentissage",
     description: "Équipements récents, double écrans, fibre optique et climatisation pour un confort de travail optimal.",
-    image: `${salle2}`,
+    image: `${ghgroup}`,
     span: "col-span-1 md:col-span-2 row-span-2"
   },
   {
@@ -78,7 +79,7 @@ export const structureGallery2 = [
     titre: "Espace Coworking & Brainstorming",
     categorie: "Collaboration",
     description: "Un espace ouvert propice aux échanges d'idées, aux revues de sprint et au travail d'équipe.",
-    image: `${salle1}`,
+    image: `${salle2}`,
     span: "col-span-1"
   },
   {
@@ -86,7 +87,7 @@ export const structureGallery2 = [
     titre: "Sessions de Mentorat 1-on-1",
     categorie: "Accompagnement",
     description: "Chaque stagiaire et apprenant bénéficie d'un suivi personnalisé avec un mentor senior.",
-    image: `${salle4}`,
+    image: `${salle1}`,
     span: "col-span-1"
   },
   {
