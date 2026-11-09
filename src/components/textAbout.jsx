@@ -38,7 +38,6 @@ export default function APropos() {
   useEffect(() => {
     const observers = [];
 
-    // Animation image gauche — slide depuis la gauche
     const imgObs = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -51,7 +50,6 @@ export default function APropos() {
     if (imgRef.current) imgObs.observe(imgRef.current);
     observers.push(imgObs);
 
-    // Animation bloc texte droit — slide depuis la droite
     const textObs = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -64,7 +62,6 @@ export default function APropos() {
     if (textRef.current) textObs.observe(textRef.current);
     observers.push(textObs);
 
-    // Animation goals — apparition en cascade
     goalRefs.current.forEach((el, i) => {
       if (!el) return;
       const obs = new IntersectionObserver(
@@ -89,25 +86,20 @@ export default function APropos() {
     <section className="bg-white py-20 px-6 md:px-16 lg:px-24">
       <div className="max-w-6xl mx-auto">
 
-        {/* ── Bloc supérieur : image gauche + texte droite ── */}
         <div className="flex flex-col lg:flex-row items-center gap-14 mb-20">
 
-          {/* Image gauche */}
           <div
             ref={imgRef}
             className="w-full lg:w-1/2 opacity-0 -translate-x-16 transition-all duration-700 ease-out"
           >
             <div className="relative">
-              {/* Écran iMac stylisé */}
               <div className="bg-gray-900 rounded-2xl p-3 shadow-2xl">
-                {/* Barre de titre */}
                 <div className="flex items-center gap-1.5 mb-2 px-1">
                   <span className="w-3 h-3 rounded-full bg-red-500" />
                   <span className="w-3 h-3 rounded-full bg-yellow-400" />
                   <span className="w-3 h-3 rounded-full bg-green-500" />
                 </div>
 
-                {/* Contenu de l'écran — code simulé */}
                 <div className="bg-gray-950 rounded-xl p-5 font-mono text-xs leading-6 overflow-hidden">
                   <p><span className="text-blue-400">import</span> <span className="text-yellow-300">React</span> <span className="text-blue-400">from</span> <span className="text-green-400">'react'</span></p>
                   <p><span className="text-blue-400">import</span> <span className="text-yellow-300">axios</span> <span className="text-blue-400">from</span> <span className="text-green-400">'axios'</span></p>
@@ -132,7 +124,6 @@ export default function APropos() {
                 </div>
               </div>
 
-              {/* Pied de l'iMac */}
               <div className="flex justify-center mt-2">
                 <div className="w-24 h-3 bg-gray-300 rounded-b-lg" />
               </div>
@@ -140,14 +131,12 @@ export default function APropos() {
                 <div className="w-40 h-2 bg-gray-200 rounded-full" />
               </div>
 
-              {/* Badge flottant */}
               <div className="absolute -top-4 -right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
                 Worketyamo ✦
               </div>
             </div>
           </div>
 
-          {/* Texte droit */}
           <div
             ref={textRef}
             className="w-full lg:w-1/2 opacity-0 translate-x-16 transition-all duration-700 ease-out"
@@ -171,7 +160,6 @@ export default function APropos() {
             plus en plus numérique.
             </p>
 
-            {/* Stats */}
             <div className="flex gap-8 mt-8">
               {[
                 { val: "200+", label: "Apprenants formés" },
@@ -187,7 +175,6 @@ export default function APropos() {
           </div>
         </div>
 
-        {/* ── Bloc inférieur : nos objectifs ── */}
         <div>
           <h3 className="text-2xl font-bold text-gray-900 mb-8">
             Nos <span className="text-blue-600">Objectifs</span>
@@ -200,12 +187,10 @@ export default function APropos() {
                 ref={(el) => (goalRefs.current[i] = el)}
                 className="flex items-start gap-5 opacity-0 translate-y-6 transition-all duration-500 ease-out"
               >
-                {/* Icône */}
-                <div className="flex-shrink-0 w-12 h-12 rounded-full border-2 border-blue-600 text-blue-600 flex items-center justify-center">
+                <div className="shrink-0 w-12 h-12 rounded-full border-2 border-blue-600 text-blue-600 flex items-center justify-center">
                   {goal.icon}
                 </div>
 
-                {/* Texte */}
                 <div>
                   <p className="font-bold text-gray-900 text-base mb-1">
                     {goal.title}

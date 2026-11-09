@@ -32,7 +32,6 @@ function AboutPage() {
 
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-800/60 border border-blue-700 text-blue-200 text-xs sm:text-sm font-semibold mb-4">
-            <Building2 size={16} className="text-orange-400" />
             <span>À Propos de Worketyamo</span>
           </div>
 
@@ -76,7 +75,7 @@ function AboutPage() {
           
           <div className="bg-blue-50/70 border border-blue-100 rounded-3xl p-8 flex flex-col justify-between shadow-xs">
             <div>
-              <div className="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center mb-6 shadow-md">
+              <div className="w-14 h-14 rounded-2xl bg-blue-100 text-white flex items-center justify-center mb-6 shadow-md">
                 <Target size={28} />
               </div>
               <h3 className="text-2xl font-bold text-blue-950 mb-3">Notre Mission</h3>
@@ -86,19 +85,19 @@ function AboutPage() {
             </div>
             <ul className="mt-6 space-y-2 text-xs text-blue-900 font-medium">
               <li className="flex items-center gap-2">
-                <CheckCircle size={14} className="text-blue-600" />
+                <CheckCircle size={14} className="text-blue-300" />
                 Formation par la pratique intensive
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle size={14} className="text-blue-600" />
+                <CheckCircle size={14} className="text-blue-300" />
                 Accompagnement aux stages universitaires
               </li>
             </ul>
           </div>
 
-          <div className="bg-orange-50/70 border border-orange-100 rounded-3xl p-8 flex flex-col justify-between shadow-xs">
+          <div className="bg-blue-50/70 border border-blue-100 rounded-3xl p-8 flex flex-col justify-between shadow-xs">
             <div>
-              <div className="w-14 h-14 rounded-2xl bg-orange-500 text-white flex items-center justify-center mb-6 shadow-md">
+              <div className="w-14 h-14 rounded-2xl bg-blue-100 text-white flex items-center justify-center mb-6 shadow-md">
                 <Lightbulb size={28} />
               </div>
               <h3 className="text-2xl font-bold text-blue-950 mb-3">Notre Vision</h3>
@@ -106,21 +105,21 @@ function AboutPage() {
                 Faire de Yaoundé un pôle d'ingénierie logicielle reconnu, en fournissant aux jeunes talents les outils pour créer leurs propres start-ups ou travailler à distance pour les leaders mondiaux.
               </p>
             </div>
-            <ul className="mt-6 space-y-2 text-xs text-orange-950 font-medium">
+            <ul className="mt-6 space-y-2 text-xs text-blue-900 font-medium">
               <li className="flex items-center gap-2">
-                <CheckCircle size={14} className="text-orange-600" />
+                <CheckCircle size={14} className="text-blue-300" />
                 Plein essor des compétences IA & Cloud
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle size={14} className="text-orange-600" />
+                <CheckCircle size={14} className="text-blue-300" />
                 Rayonnement de la tech camerounaise
               </li>
             </ul>
           </div>
 
-          <div className="bg-emerald-50/70 border border-emerald-100 rounded-3xl p-8 flex flex-col justify-between shadow-xs">
+          <div className="bg-blue-50/70 border border-blue-100 rounded-3xl p-8 flex flex-col justify-between shadow-xs">
             <div>
-              <div className="w-14 h-14 rounded-2xl bg-emerald-600 text-white flex items-center justify-center mb-6 shadow-md">
+              <div className="w-14 h-14 rounded-2xl bg-blue-100 text-white flex items-center justify-center mb-6 shadow-md">
                 <Heart size={28} />
               </div>
               <h3 className="text-2xl font-bold text-blue-950 mb-3">Nos Valeurs</h3>
@@ -128,13 +127,13 @@ function AboutPage() {
                 Rigueur technique, bienveillance, partage communautaire, humilité et passion d'apprendre. Ici, chaque erreur de code est une opportunité de grandir.
               </p>
             </div>
-            <ul className="mt-6 space-y-2 text-xs text-emerald-950 font-medium">
+            <ul className="mt-6 space-y-2 text-xs text-blue-900 font-medium">
               <li className="flex items-center gap-2">
-                <CheckCircle size={14} className="text-emerald-600" />
+                <CheckCircle size={14} className="text-blue-300" />
                 Entraide continue entre promos
               </li>
               <li className="flex items-center gap-2">
-                <CheckCircle size={14} className="text-emerald-600" />
+                <CheckCircle size={14} className="text-blue-300" />
                 Culture du code propre (Clean Code)
               </li>
             </ul>

@@ -16,37 +16,37 @@ function Features() {
       icon: Code,
       titre: "Pédagogie 100% Pratique (Learning by Doing)",
       desc: "Vous écrivez du code réel dès la première semaine. Pas de cours théoriques magistraux, mais des projets applicatifs concrets adaptés au marché tech.",
-      color: "from-blue-500 to-blue-700"
+      color: "from-slate-200 to-slate-400"
     },
     {
       icon: Users,
       titre: "Mentorat d'Experts & Revues de Code",
       desc: "Nos formateurs et mentors sont des ingénieurs seniors en activité. Ils relisent votre code, vous apprennent les bonnes pratiques et débloquent vos erreurs.",
-      color: "from-orange-500 to-amber-600"
+      color: "from-slate-200 to-slate-400"
     },
     {
       icon: Rocket,
       titre: "Insertion & Stages Garantis pour les Meilleurs",
       desc: "Grâce à notre réseau d'entreprises partenaires au Cameroun et à l'international, nous accompagnons nos apprenants vers des stages et premiers emplois.",
-      color: "from-emerald-500 to-teal-700"
+      color: "from-slate-200 to-slate-400"
     },
     {
       icon: Cpu,
       titre: "Technologies Modernes & Requis du Marché",
       desc: "React 19, Node.js, Python, Docker, Kubernetes, Flutter, IA générative... Nous actualisons constamment nos programmes pour coller aux besoins des recruteurs.",
-      color: "from-indigo-500 to-purple-700"
+      color: "from-slate-200 to-slate-400"
     },
     {
       icon: Award,
       titre: "Certifications Reconnues & Portfolio Solide",
       desc: "À l'issue de votre cursus, vous soutenez votre projet devant un jury et repartez avec une attestation certifiante et un portfolio GitHub déployé en ligne.",
-      color: "from-rose-500 to-pink-600"
+      color: "from-slate-200 to-slate-400"
     },
     {
       icon: ShieldCheck,
       titre: "Facilités de Paiement & Cadre Idéal à Melen",
       desc: "Paiement en plusieurs tranches sans frais cachés, centre climatisé avec fibre optique et énergie secourue, situé idéalement en face du CHUY.",
-      color: "from-cyan-500 to-blue-600"
+      color: "from-slate-200 to-slate-400"
     }
   ];
 

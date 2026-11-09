@@ -277,7 +277,7 @@ function ContactPage() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone size={16} className="shrink-0" />
-                  <a href="tel:+237697712493" className="hover:underline text-emerald-300 font-semibold">
+                  <a href="tel:+237697712493" className="hover:underline text-blue-300 font-semibold">
                     {phoneNumber} (Appel & WhatsApp)
                   </a>
                 </div>

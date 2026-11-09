@@ -300,12 +300,12 @@ function DemandeStageSection() {
             {/* Box Localisation Melen */}
             <div className="bg-slate-800/80 border border-slate-700 rounded-3xl p-6 text-white space-y-4">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-2xl bg-orange-500/20 flex items-center justify-center shrink-0">
+                <div className="w-12 h-12 rounded-2xl bg-slate-500/20 flex items-center justify-center shrink-0">
                   <MapPin size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold text-white text-base">Campus Worketyamo</h4>
-                  <p className="text-xs text-orange-400 font-semibold">Melen, Yaoundé ,  Face CHUY</p>
+                  <p className="text-xs text-orange-100 font-semibold">Melen, Yaoundé ,  Face CHUY</p>
                 </div>
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
@@ -324,32 +324,32 @@ function DemandeStageSection() {
               </h4>
               <ul className="space-y-3 text-xs text-slate-300">
                 <li className="flex items-start gap-2">
-                  <CheckCircle size={15} className="text-emerald-400 shrink-0 mt-0.5" />
+                  <CheckCircle size={15} className="text-blue-200 shrink-0 mt-0.5" />
                   <span><strong>100% Pratique :</strong> , vous codez dès le 1er jour sur des projets réels.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle size={15} className="text-emerald-400 shrink-0 mt-0.5" />
+                  <CheckCircle size={15} className="text-blue-200 shrink-0 mt-0.5" />
                   <span><strong>Mentorat personnalisé :</strong> Un encadrement bienveillant pour débloquer chaque étape de votre apprentissage.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle size={15} className="text-emerald-400 shrink-0 mt-0.5" />
+                  <CheckCircle size={15} className="text-blue-200 shrink-0 mt-0.5" />
                   <span><strong>Insertion & Stages :</strong> Partenariats avec des start-ups et ESN camerounaises et internationales.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle size={15} className="text-emerald-400 shrink-0 mt-0.5" />
+                  <CheckCircle size={15} className="text-blue-200 shrink-0 mt-0.5" />
                   <span><strong>Paiement flexible :</strong> Modalités échelonnées en 2 à 4 tranches pour tous les étudiants.</span>
                 </li>
               </ul>
             </div>
 
             {/* Contact direct rapide */}
-            <div className="p-4 bg-emerald-950/40 border border-emerald-500/30 rounded-2xl flex items-center justify-between">
+            <div className="p-4 bg-emerald-150/40 border border-slate-500/30 rounded-2xl flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center">
+                <div className="w-10 h-10 rounded-xl bg-slate-500 text-white flex items-center justify-center">
                   <Phone size={18} />
                 </div>
                 <div>
-                  <p className="text-xs text-emerald-300 font-medium">Hotline WhatsApp directe</p>
+                  <p className="text-xs text-emerald-200 font-medium">Hotline WhatsApp directe</p>
                   <p className="text-sm font-bold text-white">{phoneNumber}</p>
                 </div>
               </div>
@@ -357,7 +357,7 @@ function DemandeStageSection() {
                 href={`https://wa.me/+237675541573?text=Bonjour Worketyamo, je souhaite avoir un renseignement sur les formations.`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3 py-1.5 bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-semibold rounded-lg transition-colors"
+                className="px-3 py-1.5 bg-emerald-900 hover:bg-emerald-600 text-white text-xs font-semibold rounded-lg transition-colors"
               >
                 Écrire
               </a>
